@@ -21,7 +21,7 @@ jobs:
         key: ${{ runner.os }}-openeuler-repos-cache
 
     - name: Mirror the gitee/openeuler org repos to github/openeuler-mirror.
-      uses: Yikun/hub-mirror-action@v0.04
+      uses: Yikun/hub-mirror-action@v0.05
       with:
         src: gitee/openeuler
         dst: github/openeuler-mirror
