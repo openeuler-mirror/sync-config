@@ -4,6 +4,8 @@ on:
   pull_request:
     # Runs at every pull requests submitted in master branch 
     branches: [ master ]
+    paths:
+    - '.github/workflows/**'
   schedule:
     # Runs at 01:00 UTC (9:00 AM Beijing) every day
     - cron:  '0 1 * * *'
@@ -14,8 +16,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Cache src repos
+      uses: actions/cache@v1
+      with:
+        path: /home/runner/work/sync-config/sync-config/openeuler-cache
+        key: ${{ runner.os }}-openeuler-repos-cache
+
     - name: Mirror the gitee/openeuler org repos to github/openeuler-mirror.
-      uses: Yikun/hub-mirror-action@v0.04
+      uses: Yikun/hub-mirror-action@v0.05
       with:
         src: gitee/openeuler
         dst: github/openeuler-mirror
@@ -23,3 +31,4 @@ jobs:
         dst_token:  ${{ secrets.SYNC_EULER_TOKEN }}
         account_type: org
         clone_style: ssh
+        cache_path: /github/workspace/openeuler-cache
