@@ -17,7 +17,7 @@ jobs:
     - name: Cache src repos
       uses: actions/cache@v1
       with:
-        path: /home/runner/work/hub-mirror-action/hub-mirror-action/openeuler-cache
+        path: /home/runner/work/sync-config/sync-config/openeuler-cache
         key: ${{ runner.os }}-openeuler-repos-cache
 
     - name: Mirror the gitee/openeuler org repos to github/openeuler-mirror.
