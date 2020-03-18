@@ -14,6 +14,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Cache src repos
+      uses: actions/cache@v1
+      with:
+        path: /home/runner/work/hub-mirror-action/hub-mirror-action/openeuler-cache
+        key: ${{ runner.os }}-openeuler-repos-cache
+
     - name: Mirror the gitee/openeuler org repos to github/openeuler-mirror.
       uses: Yikun/hub-mirror-action@v0.04
       with:
@@ -23,3 +29,4 @@ jobs:
         dst_token:  ${{ secrets.SYNC_EULER_TOKEN }}
         account_type: org
         clone_style: ssh
+        cache_path: /github/workspace/openeuler-cache
