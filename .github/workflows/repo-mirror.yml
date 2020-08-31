@@ -31,4 +31,4 @@ jobs:
         dst_token:  ${{ secrets.SYNC_EULER_TOKEN }}
         account_type: org
         clone_style: ssh
-        cache_path: /github/workspace/openeuler-cache
+        static_list: 'abichecker,A-Tune,wisdom-advisor,avocado,avocado-vt,blog,openEuler-bootstrap,openEuler-rpm-config,ci-bot,clibcni,community,community-issue,compiler-test,container-test,custom_build_tool,docs,EulerRobot,gitbook-theme-hugo,go-gitee,infrastructure,integration-test,test-tools,package-reinforce-test,iSulad,iSulad-img,Java-Packages,kae_driver,kernel,lcr,iSula-libutils,oemaker,libkae,libwd,openeuler-jenkins,prefetch_tuning,QA,tool-collections,tp-libvirt,tp-qemu,website,security-committee,attest-tools,digest-list-tools,mate-desktop,bounds_checking_function,raspberrypi,redf,raspberrypi-kernel,ha-api,perlporter,pacemaker-mgmt,ha-web,ros,marketing,crystal-ci,openEuler-pkginfo,openEuler-lsb,openEuler-Advisor,oec-hardware,oec-application,pkgporter,pyporter,RISC-V,android-emulator,anbox,release-management,auto_py2to3,qemu,libvirt,authz,syscontainer-tools,lxcfs-tools,async-libfuse,isula-build,isula-transform,trucker,openeuler-obs,memory-scan,vmtop,secenclave,kata_integration'
