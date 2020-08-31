@@ -31,4 +31,4 @@ jobs:
         dst_token:  ${{ secrets.SYNC_EULER_TOKEN }}
         account_type: org
         clone_style: ssh
-        static_list: 'isula-build'
+        cache_path: /github/workspace/openeuler-cache
