@@ -26,3 +26,4 @@ jobs:
         dst_token:  ${{ secrets.SYNC_EULER_TOKEN }}
         account_type: org
         clone_style: ssh
+        static: "iSulad" 
