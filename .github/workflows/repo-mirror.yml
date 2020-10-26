@@ -1,4 +1,4 @@
-name: Openeuler gitee repos mirror periodic job
+name: Openeuler gitee repos mirror periodic job Manual
 
 on:
   pull_request:
