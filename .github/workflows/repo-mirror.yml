@@ -26,5 +26,4 @@ jobs:
         dst_token:  ${{ secrets.SYNC_EULER_TOKEN }}
         account_type: org
         clone_style: ssh
-        force_update: true 
-        debug: true 
+        force_update: true
