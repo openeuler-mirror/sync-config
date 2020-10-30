@@ -18,7 +18,7 @@ jobs:
     steps:
 
     - name: Mirror the gitee/openeuler org repos to github/openeuler-mirror.
-      uses: Yikun/hub-mirror-action@paging
+      uses: Yikun/hub-mirror-action@paging0
       with:
         src: gitee/openeuler
         dst: github/openeuler-mirror
@@ -27,4 +27,4 @@ jobs:
         account_type: org
         clone_style: ssh
         force_update: true
-        black_list: "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" 
+        static_list: "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" 
