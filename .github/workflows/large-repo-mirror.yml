@@ -1,4 +1,4 @@
-name: Openeuler gitee repos mirror periodic job
+name: Openeuler gitee large repos mirror periodic job
 
 on:
   pull_request:
@@ -27,4 +27,5 @@ jobs:
         account_type: org
         clone_style: ssh
         force_update: true
-        black_list: "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" 
+        timeout: '1h' 
+        static_list: "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" 
