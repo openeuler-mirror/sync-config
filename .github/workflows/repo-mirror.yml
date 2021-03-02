@@ -28,4 +28,5 @@ jobs:
         account_type: org
         clone_style: ssh
         force_update: true
+        static_list: "ros,wisdom-advisor"
         black_list: "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" 
