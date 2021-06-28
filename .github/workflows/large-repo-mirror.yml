@@ -1,4 +1,4 @@
-name: Openeuler gitee large repos mirror periodic job
+name: Openeuler gitee large repos mirror periodic job test
 
 on:
   pull_request:
