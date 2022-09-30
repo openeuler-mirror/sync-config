@@ -1,4 +1,4 @@
-# Enable job 2021-02-25
+# Enable job 2022-09-30
 name: Openeuler gitee repos mirror periodic job
 
 on:
