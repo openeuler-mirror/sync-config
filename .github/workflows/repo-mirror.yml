@@ -29,4 +29,4 @@ jobs:
         clone_style: ssh
         force_update: true
         debug: true
-        black_list: "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" 
+        static_list: "G11N" 
