@@ -1,4 +1,4 @@
-name: openEuler high priority mirror periodic job
+name: openEuler high priority mirror periodic job tst
 
 on:
   pull_request:
