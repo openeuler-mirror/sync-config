@@ -1,0 +1,31 @@
+name: openEuler high priority mirror periodic job
+
+on:
+  pull_request:
+    # Runs at every pull requests submitted in master branch 
+    branches: [ master ]
+    paths:
+    - '.github/workflows/**'
+  schedule:
+    # Runs every 2 hours, starting at 01:00.
+    - cron:  '0 1/2 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Mirror the gitee/openeuler org repos to github/openeuler-mirror.
+      uses: Yikun/hub-mirror-action@v1.3
+      with:
+        src: gitee/openeuler
+        dst: github/openeuler-mirror
+        dst_key: ${{ secrets.SYNC_EULER_PRIVATE_KEY }}
+        dst_token:  ${{ secrets.SYNC_EULER_TOKEN }}
+        account_type: org
+        clone_style: ssh
+        force_update: true
+        debug: true
+        static_list: "stratovirt"
