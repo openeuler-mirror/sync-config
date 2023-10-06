@@ -17,7 +17,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
+    - name: Cache openEuler src repos
+      uses: actions/cache@v2
+      with:
+        path: /home/runner/work/openeuler-mirror/sync-config/sync-cache
+        key: ${{ runner.os }}-sync-cache
     - name: Mirror the gitee/openeuler org repos to github/openeuler-mirror.
       uses: Yikun/hub-mirror-action@v1.3
       with:
@@ -29,4 +33,5 @@ jobs:
         clone_style: ssh
         force_update: true
         debug: true
-        black_list: "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" 
+        black_list: "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2"
+        cache_path: /github/workspace/sync-cache
