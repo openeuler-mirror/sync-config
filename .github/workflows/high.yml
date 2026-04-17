@@ -17,10 +17,10 @@ jobs:
 
     steps:
 
-    - name: Mirror the gitee/openeuler org repos to github/openeuler-mirror.
+    - name: Mirror the gitcode/openeuler org repos to github/openeuler-mirror.
       uses: Yikun/hub-mirror-action@v1.3
       with:
-        src: gitee/openeuler
+        src: gitcode/openeuler
         dst: github/openeuler-mirror
         dst_key: ${{ secrets.SYNC_EULER_PRIVATE_KEY }}
         dst_token:  ${{ secrets.SYNC_EULER_TOKEN }}
