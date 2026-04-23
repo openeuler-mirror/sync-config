@@ -8,7 +8,7 @@ on:
     - '.github/workflows/**'
   schedule:
     # Runs every 2 hours, starting at 01:00.
-    - cron:  '0 1/1 * * *'
+    - cron:  '0 1/2 * * *'
 
 jobs:
   build:
