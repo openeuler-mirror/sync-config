@@ -24,7 +24,7 @@ jobs:
       with:
         src: gitcode/openeuler
         dst: github/openeuler-mirror
-        src_token: ${{ secrets.SYNC_SRC_EULER_TOKEN }}
+        src_token: ${{ secrets.SYNC_GITCODE_TOKEN }}
         dst_key: ${{ secrets.SYNC_EULER_PRIVATE_KEY }}
         dst_token:  ${{ secrets.SYNC_EULER_TOKEN }}
         account_type: org
