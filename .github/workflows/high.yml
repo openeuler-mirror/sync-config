@@ -1,6 +1,7 @@
 name: openEuler high priority mirror periodic job
 
 on:
+  workflow_dispatch: 
   pull_request:
     # Runs at every pull requests submitted in master branch 
     branches: [ master ]
@@ -11,8 +12,7 @@ on:
     - cron:  '0 1/2 * * *'
 
 jobs:
-  build:
-
+  mirror:
     runs-on: ubuntu-latest
     env:
       PIP_BREAK_SYSTEM_PACKAGES: "1"
