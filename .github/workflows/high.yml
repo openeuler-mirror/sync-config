@@ -30,3 +30,4 @@ jobs:
         force_update: true
         debug: true
         static_list: "stratovirt"
+        lfs: true
