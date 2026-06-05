@@ -1,0 +1,130 @@
+name: Deploy Sync Status Dashboard
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs at 01:30 UTC (30 min after the daily mirror jobs at 01:00)
+    - cron: '30 1 * * *'
+
+# Only keep the latest Pages deployment
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+      actions: read
+
+    steps:
+    - name: Checkout sync-config
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+    - name: Set up Python
+      uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+      with:
+        python-version: '3.x'
+
+    # Download the latest artifact from each mirror workflow.
+    # We try each one; if a workflow hasn't run yet the step is skipped.
+    - name: Download repo-mirror results
+      uses: dawidd6/action-download-artifact@f0249ad7008fb4b9e62106cbd043aa09b1c71b70 # v9.0.1
+      continue-on-error: true
+      with:
+        workflow: repo-mirror.yml
+        workflow_conclusion: ""
+        name: mirror-results-repo-mirror
+        path: results/
+        if_no_artifact_found: warn
+
+    - name: Download large-repo-mirror results
+      uses: dawidd6/action-download-artifact@f0249ad7008fb4b9e62106cbd043aa09b1c71b70 # v9.0.1
+      continue-on-error: true
+      with:
+        workflow: large-repo-mirror.yml
+        workflow_conclusion: ""
+        name: mirror-results-large-repo-mirror
+        path: results/
+        if_no_artifact_found: warn
+
+    - name: Download high-priority results
+      uses: dawidd6/action-download-artifact@f0249ad7008fb4b9e62106cbd043aa09b1c71b70 # v9.0.1
+      continue-on-error: true
+      with:
+        workflow: high.yml
+        workflow_conclusion: ""
+        name: mirror-results-high-priority
+        path: results/
+        if_no_artifact_found: warn
+
+    - name: List downloaded results
+      run: |
+        echo "Downloaded result files:"
+        ls -la results/ 2>/dev/null || echo "(no results yet)"
+
+    - name: Generate dashboard (HTML)
+      run: |
+        python scripts/generate_dashboard.py \
+          --input-dir results/ \
+          --format html \
+          --output public/index.html
+
+    - name: Generate status Markdown for README
+      run: |
+        python scripts/generate_dashboard.py \
+          --input-dir results/ \
+          --format markdown \
+          --output /tmp/status.md
+
+    - name: Update README.md with sync status
+      run: |
+        set -e
+        # Read the generated markdown status
+        STATUS_CONTENT=$(cat /tmp/status.md)
+        # Escape it for sed (use a delimiter that won't conflict)
+        # Use python for reliable multi-line replacement
+        python3 << PYEOF
+        import re
+
+        with open("README.md", "r") as f:
+            readme = f.read()
+
+        with open("/tmp/status.md", "r") as f:
+            status = f.read().strip()
+
+        # Replace content between markers
+        pattern = r"(<!-- SYNC_STATUS_START -->).*?(<!-- SYNC_STATUS_END -->)"
+        replacement = r"\1\n" + status + r"\n\2"
+        new_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+
+        with open("README.md", "w") as f:
+            f.write(new_readme)
+
+        print("README.md updated with latest sync status")
+        PYEOF
+
+    - name: Commit updated README
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+        git add README.md
+        if git diff --cached --quiet; then
+          echo "No changes to README, skipping commit"
+        else
+          git commit -m "Update sync status in README [skip ci]"
+          git push
+        fi
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef57b64 # v4.0.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: public/
+        publish_branch: gh-pages
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: 'Update sync status dashboard [skip ci]'
