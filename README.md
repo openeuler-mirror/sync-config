@@ -5,7 +5,22 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-> ⚠️ No sync status data available yet. Data will appear after the next scheduled mirror run.
+**Last updated:** 2026-06-05T06:07:03Z
+**Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
+**Status:** ✅ All repos synced successfully
+
+| Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
+| ---: | ---: | ---: | ---: |
+| 1 | 1 | 0 | 0 |
+
+<details>
+<summary><b>✅ Synced Repos (1)</b></summary>
+
+- `stratovirt`
+
+</details>
+
+
 <!-- SYNC_STATUS_END -->
 
 ## How It Works
