@@ -2,7 +2,7 @@
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
   "workflow": "high-priority",
-  "timestamp": "2026-06-05T06:07:03Z",
+  "timestamp": "2026-06-05T07:03:25Z",
   "total": 1,
   "success": 1,
   "skipped": 0,
@@ -11,5 +11,15 @@
     "stratovirt"
   ],
   "failed_list": [],
-  "skipped_list": []
+  "skipped_list": [],
+  "diagnoses": {},
+  "workflows": {
+    "high-priority": {
+      "timestamp": "2026-06-05T07:03:25Z",
+      "total": 1,
+      "success": 1,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
 }
