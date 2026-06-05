@@ -10,23 +10,45 @@ on:
     - cron: '0 1 * * *'
 
 jobs:
-  mirror:
+  # ── Job 1: Fetch repo list from source API and split into batches ──
+  prepare:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
+    outputs:
+      batches: ${{ steps.split.outputs.batches }}
     steps:
-    - name: Checkout sync-config
-      uses: actions/checkout@v4
-
     - name: Checkout community-mirror (scripts)
       uses: actions/checkout@v4
       with:
         repository: huanglei0308/community-mirror
         path: _mirror-hub
 
-    - name: Mirror repos
-      id: mirror
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Fetch repos and split into batches
+      id: split
+      run: |
+        pip install requests -q
+        python _mirror-hub/scripts/split_batches.py \
+          --src gitcode/openeuler \
+          --src-token "${{ secrets.SYNC_GITCODE_TOKEN }}" \
+          --account-type org \
+          --black-list "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" \
+          --batch-size 80
+
+  # ── Job 2: Mirror each batch in parallel (matrix) ──
+  mirror:
+    needs: prepare
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        batch_list: ${{ fromJSON(needs.prepare.outputs.batches) }}
+    steps:
+    - name: Mirror batch
       continue-on-error: true
       uses: Yikun/hub-mirror-action@master
       with:
@@ -39,15 +61,31 @@ jobs:
         clone_style: ssh
         force_update: true
         debug: true
-        black_list: "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2"
+        static_list: ${{ matrix.batch_list }}
         lfs: true
+
+  # ── Job 3: Aggregate results, update README, deploy gh-pages ──
+  aggregate:
+    needs: mirror
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout sync-config
+      uses: actions/checkout@v4
+
+    - name: Checkout community-mirror (scripts)
+      uses: actions/checkout@v4
+      with:
+        repository: huanglei0308/community-mirror
+        path: _mirror-hub
 
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
-    - name: Check sync status
+    - name: Check sync status (all repos)
       id: status
       run: |
         pip install requests -q
