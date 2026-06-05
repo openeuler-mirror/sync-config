@@ -22,17 +22,17 @@ jobs:
 
     steps:
     - name: Checkout sync-config
-      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
     # Download the latest artifact from each mirror workflow.
     # We try each one; if a workflow hasn't run yet the step is skipped.
     - name: Download repo-mirror results
-      uses: dawidd6/action-download-artifact@f0249ad7008fb4b9e62106cbd043aa09b1c71b70 # v9.0.1
+      uses: dawidd6/action-download-artifact@v6
       continue-on-error: true
       with:
         workflow: repo-mirror.yml
@@ -42,7 +42,7 @@ jobs:
         if_no_artifact_found: warn
 
     - name: Download large-repo-mirror results
-      uses: dawidd6/action-download-artifact@f0249ad7008fb4b9e62106cbd043aa09b1c71b70 # v9.0.1
+      uses: dawidd6/action-download-artifact@v6
       continue-on-error: true
       with:
         workflow: large-repo-mirror.yml
@@ -52,7 +52,7 @@ jobs:
         if_no_artifact_found: warn
 
     - name: Download high-priority results
-      uses: dawidd6/action-download-artifact@f0249ad7008fb4b9e62106cbd043aa09b1c71b70 # v9.0.1
+      uses: dawidd6/action-download-artifact@v6
       continue-on-error: true
       with:
         workflow: high.yml
@@ -82,11 +82,6 @@ jobs:
 
     - name: Update README.md with sync status
       run: |
-        set -e
-        # Read the generated markdown status
-        STATUS_CONTENT=$(cat /tmp/status.md)
-        # Escape it for sed (use a delimiter that won't conflict)
-        # Use python for reliable multi-line replacement
         python3 << PYEOF
         import re
 
@@ -120,7 +115,7 @@ jobs:
         fi
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef57b64 # v4.0.0
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: public/
