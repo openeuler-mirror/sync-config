@@ -62,7 +62,8 @@ jobs:
         force_update: true
         debug: true
         static_list: ${{ matrix.batch_list }}
-        lfs: true
+        # lfs: true   ← 去掉 — 800 个仓库大部分不需要 LFS，
+        #                真有 LFS 需求单独建 workflow 处理
 
   # ── Job 3: Aggregate results, update README, deploy gh-pages ──
   aggregate:
