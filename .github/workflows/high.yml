@@ -90,6 +90,7 @@ jobs:
           echo "No changes to README"
         else
           git commit -m "Update sync status [skip ci]"
+          git pull --rebase
           git push
         fi
 
