@@ -1,11 +1,11 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "high-priority",
-  "timestamp": "2026-06-06T04:54:35Z",
+  "workflow": "large-repo-mirror",
+  "timestamp": "2026-06-06T06:03:28Z",
   "total": 818,
-  "success": 811,
-  "skipped": 5,
+  "success": 816,
+  "skipped": 0,
   "failed": 2,
   "success_list": [
     "A-FOT",
@@ -394,6 +394,7 @@
     "kbuild-standalone",
     "kconfigDetector",
     "kdnn_torch_adapter",
+    "kernel",
     "kernel-ascend",
     "kernel-cloudnative",
     "kernel-docs",
@@ -616,12 +617,15 @@
     "python-multi_key_dict",
     "pyuadk",
     "qax-gm-certificates",
+    "qemu",
     "qingzhou",
     "qla2xxx",
     "qt6",
     "quick-issue",
     "radiaTest",
+    "raspberrypi",
     "raspberrypi-build",
+    "raspberrypi-kernel",
     "rat",
     "ray-adapter",
     "re2-rust",
@@ -774,6 +778,7 @@
     "wayca-scheduler",
     "wayca-scheduler-bench",
     "website",
+    "website-v2",
     "wine-app",
     "wisdom-advisor",
     "witty",
@@ -824,13 +829,7 @@
     "intel-kernel",
     "openEuler"
   ],
-  "skipped_list": [
-    "kernel",
-    "qemu",
-    "raspberrypi",
-    "raspberrypi-kernel",
-    "website-v2"
-  ],
+  "skipped_list": [],
   "diagnoses": {
     "intel-kernel": [
       "Source: accessible",
@@ -857,6 +856,13 @@
       "success": 811,
       "failed": 2,
       "skipped": 5
+    },
+    "large-repo-mirror": {
+      "timestamp": "2026-06-06T06:03:28Z",
+      "total": 5,
+      "success": 5,
+      "failed": 0,
+      "skipped": 0
     }
   }
 }
