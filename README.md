@@ -5,19 +5,19 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-05T12:01:28Z
+**Last updated:** 2026-06-06T07:16:12Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **2 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 818 | 811 | 2 | 5 |
+| 818 | 816 | 2 | 0 |
 
 ### ❌ Failed Repos
 
 - `intel-kernel`
   - Source: accessible
-  - Destination: Repo is very large (2642MB) — may have timed out
+  - Destination: Repo is very large (2643MB) — may have timed out
   - Cached: not found (download may have failed)
 
 - `openEuler`
@@ -28,18 +28,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
 <details>
-<summary><b>⏭️ Skipped Repos (5)</b></summary>
-
-- `kernel`
-- `qemu`
-- `raspberrypi`
-- `raspberrypi-kernel`
-- `website-v2`
-
-</details>
-
-<details>
-<summary><b>✅ Synced Repos (811)</b></summary>
+<summary><b>✅ Synced Repos (816)</b></summary>
 
 - `A-FOT`
 - `A-Ops`
@@ -427,6 +416,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `kbuild-standalone`
 - `kconfigDetector`
 - `kdnn_torch_adapter`
+- `kernel`
 - `kernel-ascend`
 - `kernel-cloudnative`
 - `kernel-docs`
@@ -649,12 +639,15 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `python-multi_key_dict`
 - `pyuadk`
 - `qax-gm-certificates`
+- `qemu`
 - `qingzhou`
 - `qla2xxx`
 - `qt6`
 - `quick-issue`
 - `radiaTest`
+- `raspberrypi`
 - `raspberrypi-build`
+- `raspberrypi-kernel`
 - `rat`
 - `ray-adapter`
 - `re2-rust`
@@ -807,6 +800,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `wayca-scheduler`
 - `wayca-scheduler-bench`
 - `website`
+- `website-v2`
 - `wine-app`
 - `wisdom-advisor`
 - `witty`
