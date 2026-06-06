@@ -2,11 +2,11 @@
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
   "workflow": "high-priority",
-  "timestamp": "2026-06-06T18:06:01Z",
+  "timestamp": "2026-06-06T20:09:46Z",
   "total": 818,
-  "success": 815,
+  "success": 816,
   "skipped": 0,
-  "failed": 3,
+  "failed": 2,
   "success_list": [
     "A-FOT",
     "A-Ops",
@@ -693,6 +693,7 @@
     "sssnic-driver",
     "storprototrace",
     "stortrace",
+    "stratovirt",
     "summer2022",
     "sw-committee",
     "sync-bot",
@@ -826,8 +827,7 @@
   ],
   "failed_list": [
     "intel-kernel",
-    "openEuler",
-    "stratovirt"
+    "openEuler"
   ],
   "skipped_list": [],
   "diagnoses": {
@@ -840,20 +840,14 @@
       "Source: API returned HTTP 400",
       "Destination: Source repo not found or not accessible with current token",
       "Cached: not found (download may have failed)"
-    ],
-    "stratovirt": [
-      "Source: API returned HTTP 400",
-      "Destination: exists",
-      "Cached: local copy exists",
-      "Cached: valid git repo"
     ]
   },
   "workflows": {
     "high-priority": {
-      "timestamp": "2026-06-06T18:06:01Z",
+      "timestamp": "2026-06-06T20:09:46Z",
       "total": 1,
-      "success": 0,
-      "failed": 1,
+      "success": 1,
+      "failed": 0,
       "skipped": 0
     },
     "repo-mirror": {
