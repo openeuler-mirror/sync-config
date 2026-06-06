@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-06T06:03:28Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-06T07:16:12Z",
   "total": 818,
   "success": 816,
   "skipped": 0,
@@ -833,7 +833,7 @@
   "diagnoses": {
     "intel-kernel": [
       "Source: accessible",
-      "Destination: Repo is very large (2642MB) — may have timed out",
+      "Destination: Repo is very large (2643MB) — may have timed out",
       "Cached: not found (download may have failed)"
     ],
     "openEuler": [
@@ -851,7 +851,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-05T12:01:28Z",
+      "timestamp": "2026-06-06T07:16:12Z",
       "total": 818,
       "success": 811,
       "failed": 2,
