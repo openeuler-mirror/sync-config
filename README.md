@@ -5,7 +5,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-06T07:16:12Z
+**Last updated:** 2026-06-07T07:38:15Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **2 repo(s) failed**
 
@@ -17,7 +17,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - `intel-kernel`
   - Source: accessible
-  - Destination: Repo is very large (2643MB) — may have timed out
+  - Destination: Repo is very large (2641MB) — may have timed out
   - Cached: not found (download may have failed)
 
 - `openEuler`
