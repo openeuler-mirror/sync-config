@@ -84,19 +84,32 @@ jobs:
 
         echo "Job ID: $JOB_ID"
 
-        # Download this job's raw log
-        curl -s -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          "https://api.github.com/repos/${{ github.repository }}/actions/jobs/$JOB_ID/logs" \
-          > job_log.txt
+        # Download this job's raw log.
+        # API returns 302 → blob storage on a different host, so
+        # --location-trusted is needed to pass auth to the redirect target.
+        HTTP_CODE=$(curl -s -o job_log.txt -w "%{http_code}" \
+          -L --location-trusted --connect-timeout 10 --max-time 30 \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/jobs/$JOB_ID/logs")
 
-        echo "Log downloaded: $(wc -c < job_log.txt) bytes"
+        echo "Log download: HTTP $HTTP_CODE, $(wc -c < job_log.txt) bytes"
+
+        # If download failed, try once more after a short delay
+        if [ "$HTTP_CODE" != "200" ] || [ $(wc -c < job_log.txt) -lt 500 ]; then
+          echo "::warning::Log may not be ready (HTTP $HTTP_CODE, $(wc -c < job_log.txt) bytes), retrying in 5s..."
+          sleep 5
+          HTTP_CODE=$(curl -s -o job_log.txt -w "%{http_code}" \
+            -L --location-trusted --connect-timeout 10 --max-time 30 \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/jobs/$JOB_ID/logs")
+          echo "Retry: HTTP $HTTP_CODE, $(wc -c < job_log.txt) bytes"
+        fi
 
         # Extract hub-mirror-action's own summary line
-        TOTAL_LINE=$(grep "INFO:hubmirror:Total:" job_log.txt | tail -1)
         FAILED_LINE=$(grep "INFO:hubmirror:Failed:" job_log.txt | tail -1)
 
         echo "=== hub-mirror-action results ==="
-        echo "$TOTAL_LINE"
+        grep "INFO:hubmirror:Total:" job_log.txt | tail -1 || true
         echo "$FAILED_LINE"
 
         # Parse "INFO:hubmirror:Failed: ['repo1', 'repo2', ...]"
@@ -107,6 +120,11 @@ jobs:
             | jq -c '.')
         else
           FAILED_JSON="[]"
+          # If hub-mirror-action step failed but we found no Failed: line,
+          # the log download likely failed — warn about this
+          if [ "${{ steps.mirror.outcome }}" = "failure" ]; then
+            echo "::warning::Mirror step failed but log extraction found no failures. Log may be incomplete."
+          fi
         fi
 
         jq -n \
