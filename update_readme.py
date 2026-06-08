@@ -17,12 +17,14 @@ src = data.get("src", "")
 dst = data.get("dst", "")
 diagnoses = data.get("diagnoses", {})
 
-batch_errors = data.get("batch_errors", 0)
+push_failed_count = data.get("push_failed_count", 0)
+batch_reports = data.get("batch_reports_count", 0)
+batch_verified = data.get("batch_verified", 0)
 
 if failed > 0:
     overall = f"⚠️ **{failed} repo(s) failed**"
-elif batch_errors > 0:
-    overall = f"⚠️ **{batch_errors} batch(es) had mirror errors** (repos exist but push may have failed — check logs)"
+elif push_failed_count > 0:
+    overall = f"⚠️ **{push_failed_count} repo(s) push failed** (HEAD mismatch)"
 else:
     overall = "✅ All repos synced successfully"
 
@@ -46,11 +48,15 @@ if failed_list:
         md += "\n"
     md += "[🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)\n\n"
 
-if batch_errors > 0:
-    md += f"### ⚠️ Mirror Errors\n\n"
-    md += f"**{batch_errors}** mirror batch(es) had errors. "
-    md += "Some repos may exist on GitHub but the push had issues "
-    md += "(LFS auth failures, push protection, large files, etc). "
+if push_failed_count > 0:
+    push_failed_list = data.get("push_failed_list", [])
+    md += f"### ❌ Push Failed (HEAD mismatch)\n\n"
+    for r in push_failed_list:
+        md += f"- `{r}`\n"
+        if r in diagnoses:
+            for d in diagnoses[r]:
+                md += f"  - {d}\n"
+        md += "\n"
     md += "[🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions) for details.\n\n"
 
 if skipped_list:
