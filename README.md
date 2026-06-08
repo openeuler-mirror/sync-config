@@ -5,7 +5,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-08T08:18:56Z
+**Last updated:** 2026-06-08T10:19:55Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **43 repo(s) failed**
 
@@ -16,216 +16,259 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ### ❌ Failed Repos
 
 - `A-SysArmor`
+  - ! [remote rejected] origin/master -> master (pre-receive hook declined) | ! [remote rejected] origin/dev-innovation -> dev-innovation (pre-receive hook declined) | error: failed to push some refs to '
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `BiShengCLanguage`
+  - remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com. | ! [remote rejected] origin/master -> master (pre-receive hook declined) | error: 
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `OSPerformance`
+  - remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com. | ! [remote rejected] origin/dev -> dev (pre-receive hook declined) | error: failed
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `PilotGo-plugins`
+  - remote: error: GH013: Repository rule violations found for refs/heads/master. | ! [remote rejected]   origin/master -> master (push declined due to repository rule violations) | error: failed to push 
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `arkui-linux`
+  - fatal: could not read Username for 'https://artlfs.openeuler.openatom.cn': No such device or address | error: failed to push some refs to 'github.com:openeuler-mirror/arkui-linux.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `bigtop-manager`
+  - ! [remote rejected] master (refusing to delete the current branch: refs/heads/master) | error: failed to push some refs to 'github.com:openeuler-mirror/bigtop-manager.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `bishengjdk-build`
+  - ! [remote rejected] origin/dev -> dev (pre-receive hook declined) | ! [remote rejected] origin/k1_JIT -> k1_JIT (pre-receive hook declined) | error: failed to push some refs to 'github.com:openeuler-m
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `btfhub`
+  - ! [remote rejected] feature/init (refusing to delete the current branch: refs/heads/feature/init) | error: failed to push some refs to 'github.com:openeuler-mirror/btfhub.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `docs`
+  - ! [remote rejected] origin/stable-common -> stable-common (pre-receive hook declined) | ! [remote rejected] origin/sync-pr420-master-to-stable-24.03_LTS_SP4 -> sync-pr420-master-to-stable-24.03_LTS_SP
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `docs-centralized`
+  - ! [remote rejected]     v1.0.3 -> v1.0.3 (failed) | ! [remote rejected]     v1.0Base -> v1.0Base (failed) | error: failed to push some refs to 'github.com:openeuler-mirror/docs-centralized.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `dpu-utilities`
+  - ! [remote rejected] v1.8 -> v1.8 (pre-receive hook declined) | ! [remote rejected] v1.9 -> v1.9 (pre-receive hook declined) | error: failed to push some refs to 'github.com:openeuler-mirror/dpu-utilit
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `euler-copilot-rag`
+  - ! [remote rejected] origin/release-0.10.0 -> release-0.10.0 (push declined due to repository rule violations) | ! [remote rejected] origin/release-0.10.1 -> release-0.10.1 (push declined due to reposi
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `expert-kit`
+  - ! [remote rejected] case/dsv3 (refusing to delete the current branch: refs/heads/case/dsv3) | error: failed to push some refs to 'github.com:openeuler-mirror/expert-kit.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `ft_engine`
+  - fatal: could not read Username for 'https://artlfs.openeuler.openatom.cn': No such device or address | error: failed to push some refs to 'github.com:openeuler-mirror/ft_engine.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `gala-docs`
+  - ! [remote rejected] origin/master -> master (pre-receive hook declined) | ! [remote rejected] origin/gitee-pages -> gitee-pages (pre-receive hook declined) | error: failed to push some refs to 'github
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `global-trust-authority`
+  - ! [remote rejected] v0.2.5 -> v0.2.5 (pre-receive hook declined) | ! [remote rejected] v0.2.6 -> v0.2.6 (pre-receive hook declined) | error: failed to push some refs to 'github.com:openeuler-mirror/gl
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `hotpatch_meta`
+  - ! [remote rejected] hotpatch_openEuler-22.03-LTS-SP1_kernel_5.10.0-136.36.0.112_1 (refusing to delete the current branch: refs/heads/hotpatch_openEuler-22.03-LTS-SP1_kernel_5.10.0-136.36.0.112_1) | er
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `hpc`
+  - ! [remote rejected]   origin/wrf -> wrf (pre-receive hook declined) | ! [remote rejected]   origin/wrf-adios2 -> wrf-adios2 (pre-receive hook declined) | error: failed to push some refs to 'github.com
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `hygon-kernel`
+  - fatal: the remote end hung up unexpectedly
   - Source: accessible
   - Destination: Repo is very large (2606MB) — may have timed out
   - Cached: not found (download may have failed)
 
 - `intel-kernel`
+  - ! [remote rejected]           master (refusing to delete the current branch: refs/heads/master) | error: failed to push some refs to 'github.com:openeuler-mirror/intel-kernel.git'
   - Source: accessible
   - Destination: Repo is very large (2657MB) — may have timed out
   - Cached: not found (download may have failed)
 
 - `lerobot_ros2`
+  - ge_128x128.png (9dc9df0): Smudge error: Error downloading tests/artifacts/cameras/image_128x128.png (9dc9df05797dc0e7b92edc845caab2e4c37c3cfcabb4ee6339c67212b5baba3b): batch response: {"message": "Acc
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `libarchive-rust`
+  - ! [remote rejected] origin/master -> master (pre-receive hook declined) | ! [remote rejected] origin/test -> test (pre-receive hook declined) | error: failed to push some refs to 'github.com:openeuler
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `llm_solution`
+  - remote: error: GH013: Repository rule violations found for refs/heads/master. | ! [remote rejected] origin/master -> master (push declined due to repository rule violations) | error: failed to push so
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `lzu-icc-nsg`
+  - remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com. | ! [remote rejected] origin/master -> master (pre-receive hook declined) | error: 
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `migration-tools`
+  - ! [remote rejected] test (pre-receive hook declined) | ! [remote rejected] v0.1 -> v0.1 (pre-receive hook declined) | error: failed to push some refs to 'github.com:openeuler-mirror/migration-tools.gi
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `mugen`
+  - fatal: could not read Username for 'https://artlfs.openeuler.openatom.cn': No such device or address | error: failed to push some refs to 'github.com:openeuler-mirror/mugen.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `nestos-kernel`
+  - fatal: the remote end hung up unexpectedly
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `oee_archive`
+  - fatal: could not read Username for 'https://artlfs.openeuler.openatom.cn': No such device or address | fatal: could not read Username for 'https://artlfs.openeuler.openatom.cn': No such device or addr
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `openEuler`
+  - fatal: <CH.00905404> The project you were looking for could not be found. Request-id is M6WSJTc3UE. | fatal: Could not read from remote repository.
   - Source: API returned HTTP 400
   - Destination: Source repo not found or not accessible with current token
   - Cached: not found (download may have failed)
 
 - `opendesign-internship`
+  - remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com. | ! [remote rejected] origin/master -> master (pre-receive hook declined) | error: 
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `opensource-intern`
+  - remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com. | ! [remote rejected]   origin/master -> master (pre-receive hook declined) | error
   - Source: accessible
   - Destination: Repo is very large (1084MB) — may have timed out
   - Cached: not found (download may have failed)
 
 - `presentations`
+  - t: ODD2025/材料模板/169-PPT大会材料模版.pptx (ea6c739): Smudge error: Error downloading ODD2025/材料模板/169-PPT大会材料模版.pptx (ea6c7399950fa70615b0306e048a6d813d974087dd7959872a127d4b5aac5e55): batch response: {"mess
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `riscv-kernel`
+  - error: remote unpack failed: no voting servers succeeded | ! [remote rejected]           origin/OLK-6.6 -> OLK-6.6 (failed) | error: failed to push some refs to 'github.com:openeuler-mirror/riscv-kern
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `skills`
+  - remote: error: GH013: Repository rule violations found for refs/heads/master. | ! [remote rejected] origin/master -> master (push declined due to repository rule violations) | error: failed to push so
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `sra_test`
+  - ! [remote rejected] v1.4.0 -> v1.4.0 (pre-receive hook declined) | ! [remote rejected] v2.0.0 -> v2.0.0 (pre-receive hook declined) | error: failed to push some refs to 'github.com:openeuler-mirror/sr
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `sysmaster`
+  - ! [remote rejected]   auto-5324761-master-af4e488f (refusing to delete the current branch: refs/heads/auto-5324761-master-af4e488f) | error: failed to push some refs to 'github.com:openeuler-mirror/sy
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `trivy`
+  - ! [remote rejected] v1.0 -> v1.0 (pre-receive hook declined) | ! [remote rejected] v1.1 -> v1.1 (pre-receive hook declined) | error: failed to push some refs to 'github.com:openeuler-mirror/trivy.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `ubs-io`
+  - fatal: could not read Username for 'https://artlfs.openeuler.openatom.cn': No such device or address | error: failed to push some refs to 'github.com:openeuler-mirror/ubs-io.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `virtCCA_sdk`
+  - ! [remote rejected] v0.1.48 -> v0.1.48 (push declined due to repository rule violations) | ! [remote rejected] v0.1.49 -> v0.1.49 (push declined due to repository rule violations) | error: failed to p
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `witty-ops-cases`
+  - fatal: could not read Username for 'https://artlfs.openeuler.openatom.cn': No such device or address | error: failed to push some refs to 'github.com:openeuler-mirror/witty-ops-cases.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `witty-ub`
+  - ! [remote rejected] copy-log (refusing to delete the current branch: refs/heads/copy-log) | error: failed to push some refs to 'github.com:openeuler-mirror/witty-ub.git'
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `yocto-embedded-tools`
+  - ! [remote rejected] origin/openEuler-22.03-LTS-SP2 -> openEuler-22.03-LTS-SP2 (pre-receive hook declined) | ! [remote rejected] origin/openEuler-23.03 -> openEuler-23.03 (pre-receive hook declined) | 
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
 
 - `zvm`
+  - ! [remote rejected]   ZVM-RK3588发行版 -> ZVM-RK3588发行版 (pre-receive hook declined) | ! [remote rejected]   openZVM-v1.0 -> openZVM-v1.0 (pre-receive hook declined) | error: failed to push some refs to '
   - Source: accessible
   - Destination: exists
   - Cached: not found (download may have failed)
