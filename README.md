@@ -5,19 +5,369 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-07T07:38:15Z
+**Last updated:** 2026-06-08T05:05:54Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
-**Status:** ⚠️ **2 repo(s) failed**
+**Status:** ⚠️ **113 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 818 | 816 | 2 | 0 |
+| 821 | 816 | 113 | 0 |
 
 ### ❌ Failed Repos
+
+- `A-SysArmor`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `BiShengCLanguage`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `Conch`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `IB_Robot`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `KASandbox`
+  - Source: accessible
+  - Destination: Source repo not found or not accessible with current token
+  - Cached: not found (download may have failed)
+
+- `KubeMate`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `LinQuickRec`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `PilotGo-plugins`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `RAM-A`
+  - Source: accessible
+  - Destination: Source repo not found or not accessible with current token
+  - Cached: not found (download may have failed)
+
+- `ag-cli`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `agent-insight`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `arkui-linux`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `bigtop-manager`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `bishengjdk-21`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `bishengjdk-25`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `bishengjdk-build`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `btfhub`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `cinderx`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `cu-cockpit`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `cu-concrete`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `cu-scanner`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `docs`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `docs-centralized`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `dpu-utilities`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `euler-copilot-rag`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `expert-kit`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ft_engine`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `gala-docs`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `global-trust-authority`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `hotpatch_meta`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `hpc`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `hygon-kernel`
+  - Source: accessible
+  - Destination: Repo is very large (2606MB) — may have timed out
+  - Cached: not found (download may have failed)
 
 - `intel-kernel`
   - Source: accessible
   - Destination: Repo is very large (2641MB) — may have timed out
+  - Cached: not found (download may have failed)
+
+- `intel-lkvs`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kernel-cloudnative`
+  - Source: accessible
+  - Destination: Repo is very large (1814MB) — may have timed out
+  - Cached: not found (download may have failed)
+
+- `kiran-authentication-service`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-biometrics`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-calculator`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-calendar`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-cc-daemon`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-control-panel`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-desktop`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-flameshot`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-gtk-theme`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-icon-theme`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-log`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-menu`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-panel`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-qdbusxml2cpp`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-qt5-integration`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-screensaver`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-session-guard`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-session-manager`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-widgets-qt5`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `knet`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ks-scmc`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ks-scmc-gui`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ks-ssr`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ks-vaudit`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ktib`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `lerobot_ros2`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `libarchive-rust`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `llm_solution`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `llvm-project`
+  - Source: accessible
+  - Destination: Repo is very large (3136MB) — may have timed out
+  - Cached: not found (download may have failed)
+
+- `lzu-icc-nsg`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `migration-tools`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `mugen`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `nestos-kubernetes-deployer`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `nvme-snsd`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `nvwa-cve-fixer`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `oee_archive`
+  - Source: accessible
+  - Destination: exists
   - Cached: not found (download may have failed)
 
 - `openEuler`
@@ -25,7 +375,766 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
   - Destination: Source repo not found or not accessible with current token
   - Cached: not found (download may have failed)
 
+- `opendesign-analytics`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `opendesign-internship`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `opendesign-skills`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `opendesign-token`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `opensource-intern`
+  - Source: accessible
+  - Destination: Repo is very large (1084MB) — may have timed out
+  - Cached: not found (download may have failed)
+
+- `openssl`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `presentations`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ray-adapter`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `rhostname`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ros-porting-tools`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `rust_shyper`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `seccom-tee`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `signatrust`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `skills`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `sra_test`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `sysHAX-adapter`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `syskits`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `sysmaster`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `uadk`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `uadk_engine`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ubs-comm`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ubs-engine`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ubs-io`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ubs-virt`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `virtCCA_sdk`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-diagnosis-agent`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-framework`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-opencode`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-ops-cases`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-ub`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `x2nestos`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `xiaoO`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-embedded-tools`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-meta-openembedded`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-meta-qt5`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-meta-renesas`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-meta-ros`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yuanrong`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yuanrong-frontend`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yuanrong-sandbox-sdk`
+  - Source: accessible
+  - Destination: Source repo not found or not accessible with current token
+  - Cached: not found (download may have failed)
+
+- `zvm`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
+
+### ❌ Push Failed (HEAD mismatch)
+
+- `A-SysArmor`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `BiShengCLanguage`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `Conch`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `IB_Robot`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `KubeMate`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `LinQuickRec`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `PilotGo-plugins`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ag-cli`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `agent-insight`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `arkui-linux`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `bigtop-manager`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `bishengjdk-21`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `bishengjdk-25`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `bishengjdk-build`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `btfhub`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `cinderx`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `cu-cockpit`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `cu-concrete`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `cu-scanner`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `docs`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `docs-centralized`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `dpu-utilities`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `euler-copilot-rag`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `expert-kit`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ft_engine`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `gala-docs`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `global-trust-authority`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `hotpatch_meta`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `hpc`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `hygon-kernel`
+  - Source: accessible
+  - Destination: Repo is very large (2606MB) — may have timed out
+  - Cached: not found (download may have failed)
+
+- `intel-kernel`
+  - Source: accessible
+  - Destination: Repo is very large (2641MB) — may have timed out
+  - Cached: not found (download may have failed)
+
+- `intel-lkvs`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kernel-cloudnative`
+  - Source: accessible
+  - Destination: Repo is very large (1814MB) — may have timed out
+  - Cached: not found (download may have failed)
+
+- `kiran-authentication-service`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-biometrics`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-calculator`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-calendar`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-cc-daemon`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-control-panel`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-desktop`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-flameshot`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-gtk-theme`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-icon-theme`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-log`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-menu`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-panel`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-qdbusxml2cpp`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-qt5-integration`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-screensaver`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-session-guard`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-session-manager`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `kiran-widgets-qt5`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `knet`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ks-scmc`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ks-scmc-gui`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ks-ssr`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ks-vaudit`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ktib`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `lerobot_ros2`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `libarchive-rust`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `llm_solution`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `llvm-project`
+  - Source: accessible
+  - Destination: Repo is very large (3136MB) — may have timed out
+  - Cached: not found (download may have failed)
+
+- `lzu-icc-nsg`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `migration-tools`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `mugen`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `nestos-kubernetes-deployer`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `nvme-snsd`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `nvwa-cve-fixer`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `oee_archive`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `openEuler`
+  - Source: API returned HTTP 400
+  - Destination: Source repo not found or not accessible with current token
+  - Cached: not found (download may have failed)
+
+- `opendesign-analytics`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `opendesign-internship`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `opendesign-skills`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `opendesign-token`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `opensource-intern`
+  - Source: accessible
+  - Destination: Repo is very large (1084MB) — may have timed out
+  - Cached: not found (download may have failed)
+
+- `openssl`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `presentations`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ray-adapter`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `rhostname`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ros-porting-tools`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `rust_shyper`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `seccom-tee`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `signatrust`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `skills`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `sra_test`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `sysHAX-adapter`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `syskits`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `sysmaster`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `uadk`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `uadk_engine`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ubs-comm`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ubs-engine`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ubs-io`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `ubs-virt`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `virtCCA_sdk`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-diagnosis-agent`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-framework`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-opencode`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-ops-cases`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `witty-ub`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `x2nestos`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `xiaoO`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-embedded-tools`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-meta-openembedded`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-meta-qt5`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-meta-renesas`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yocto-meta-ros`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yuanrong`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `yuanrong-frontend`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+- `zvm`
+  - Source: accessible
+  - Destination: exists
+  - Cached: not found (download may have failed)
+
+[🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions) for details.
 
 <details>
 <summary><b>✅ Synced Repos (816)</b></summary>
@@ -230,622 +1339,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `ci-bot`
 - `cinderx`
 - `clibcni`
-- `cloudnative`
-- `cloudnative-docs`
-- `cloudphone_kernel`
-- `clyde`
-- `community`
-- `community-issue`
-- `compass-ci`
-- `compass-ci-web`
-- `compat-winapp`
-- `compiler-docs`
-- `compiler-test`
-- `compliance`
-- `compliance-sbom`
-- `conda-ecopkgs`
-- `container-test`
-- `cpds-agent`
-- `cpds-analyzer`
-- `cpds-dashboard`
-- `cpds-detector`
-- `ct-cockpit`
-- `ct-oval`
-- `ctdeployer`
-- `ctforge`
-- `cu-cockpit`
-- `cu-concrete`
-- `cu-scanner`
-- `curl-rust`
-- `custom_build_tool`
-- `cve-ease`
-- `cve-manager`
-- `cve-void`
-- `cyanfs`
-- `dcs`
-- `dde`
-- `dde_autotest_euler`
-- `deepInsight`
-- `deepin-rpm-installer`
-- `deepin-upgrade-tool`
-- `devkit-pipeline`
-- `devstation-config`
-- `dhcp`
-- `digest-list-tools`
-- `dim`
-- `dim_tools`
-- `distributed-beget`
-- `distributed-codelabs`
-- `docmate`
-- `docs`
-- `docs-accompany-reading`
-- `docs-centralized`
-- `docs-model-dataset`
-- `docs-website`
-- `donau-arv-gpu-extension`
-- `donau-pam-adopt`
-- `donau-slurm-wrappers`
-- `dpdk`
-- `dpu-core`
-- `dpu-utilities`
-- `dsoftbus_standard`
-- `duoyibu-ai`
-- `eagle`
-- `easy-checker`
-- `easy-software`
-- `easybox`
-- `easysoftware-command`
-- `eggo`
-- `elf-loader`
-- `elfin-parser`
-- `embedded`
-- `embedded-ci`
-- `embedded-ipc`
-- `enclave-device-plugins`
-- `env_check`
-- `epkg`
-- `epkg-autopkg`
-- `epkg-factory`
-- `epkg-merge`
-- `epkg-spec2yaml`
-- `etipc`
-- `etmem`
-- `euler-copilot-desktop`
-- `euler-copilot-framework`
-- `euler-copilot-rag`
-- `euler-copilot-shell`
-- `euler-copilot-vectorize-agent`
-- `euler-copilot-web`
-- `euler-copilot-witchaind-web`
-- `eulerfs`
-- `eulerfs-test`
-- `eulerlauncher`
-- `eulerpublisher`
-- `evs`
-- `expert-kit`
-- `extfuse`
-- `extuner`
-- `fastblock`
-- `ft_engine`
-- `ft_flutter`
-- `ft_mmi`
-- `ft_multimedia`
-- `ft_surface`
-- `ft_utils`
-- `ft_wl_fwk`
-- `gala-anteater`
-- `gala-docs`
-- `gala-filetrace`
-- `gala-gopher`
-- `gala-ragdoll`
-- `gala-spider`
-- `gateway`
-- `gazelle`
-- `gazelle-cni`
-- `gcc`
-- `gcc-anti-sca`
-- `gcc-for-openEuler`
-- `geo-coding`
-- `git-basics`
-- `gitbook-theme-hugo`
-- `global-trust-authority`
-- `globalization`
-- `globaltrustauthority-rbs`
-- `glusterfs-dashboard`
-- `go-gitee`
-- `golang`
-- `gostone`
-- `guest-components`
-- `ha-api`
-- `ha-monitor`
-- `ha-web`
-- `ham`
-- `hands-on`
-- `hb_build`
-- `hbm-predictor`
-- `heolleo`
-- `heterogeneous_systems_programming`
-- `hey`
-- `hi-mpu`
-- `hikptool`
-- `hinic3`
-- `hmir`
-- `hostha`
-- `hotpatch_meta`
-- `hpc`
-- `hpc-openpmix`
-- `hpc-prrte`
-- `hpcpilot`
-- `hpcrunner`
-- `hsak`
-- `http-parser`
-- `hw-buaa-lab`
-- `hygon-devkit`
-- `hygon-edk2`
-- `hygon-kernel`
-- `hygon-qemu`
-- `iSulad`
-- `iSulad-img`
-- `ifm_nettle`
-- `imageTailor`
-- `industrial-scene-optimizer`
-- `infrastructure`
-- `install-scripts`
-- `integration-test`
-- `intel-docs`
-- `intel-iavf`
-- `intel-ice`
-- `intel-lkvs`
-- `intel-oneapi`
-- `intel-openvino`
-- `intel-qat`
-- `intel-qemu`
-- `isula-build`
-- `isula-rust-extensions`
-- `isula-transform`
-- `itrustee_client`
-- `itrustee_sdk`
-- `itrustee_tzdriver`
-- `jiuwen-agentcore`
-- `jiuwen-deepsearch`
-- `k8s-install`
-- `kae_driver`
-- `kail_dnn_adapter`
-- `kata_integration`
-- `kbox`
-- `kbuild-standalone`
-- `kconfigDetector`
-- `kdnn_torch_adapter`
-- `kernel`
-- `kernel-ascend`
-- `kernel-cloudnative`
-- `kernel-docs`
-- `ketones`
-- `kiran-authentication-devices`
-- `kiran-authentication-service`
-- `kiran-biometrics`
-- `kiran-calculator`
-- `kiran-calendar`
-- `kiran-cc-daemon`
-- `kiran-control-panel`
-- `kiran-desktop`
-- `kiran-flameshot`
-- `kiran-gtk-theme`
-- `kiran-icon-theme`
-- `kiran-log`
-- `kiran-manual`
-- `kiran-menu`
-- `kiran-panel`
-- `kiran-qdbusxml2cpp`
-- `kiran-qt5-integration`
-- `kiran-screensaver`
-- `kiran-session-guard`
-- `kiran-session-manager`
-- `kiran-shell`
-- `kiran-tests`
-- `kiran-wallpapers`
-- `kiran-widgets-qt5`
-- `kml_adapter`
-- `kmpi`
-- `knet`
-- `krun`
-- `ks-scmc`
-- `ks-scmc-gui`
-- `ks-ssr`
-- `ks-vaudit`
-- `ksc-defender`
-- `kspack-c`
-- `kspack-go`
-- `kspack-java`
-- `kspack-rust`
-- `ktib`
-- `kucg`
-- `kucx`
-- `kunpeng-competition`
-- `kunpeng-devkit`
-- `kunpeng-extension-for-pytorch`
-- `kunpengsecl`
-- `kupl-sample`
-- `kvcache-ops`
-- `kyclassifier`
-- `kylin-installer`
-- `kylin-user-guide`
-- `kytuning-client`
-- `kytuning-server`
-- `lanzhou_university_2021`
-- `lboot`
-- `lcr`
-- `ledog_ros2`
-- `lep`
-- `lerobot_ros2`
-- `lfs-course`
-- `li-wen`
-- `lib-shim-v2`
-- `libXSched`
-- `libarchive-rust`
-- `libboundscheck`
-- `libcareplus`
-- `libcdma`
-- `libevhtp`
-- `libgdbm-rust`
-- `libgmem`
-- `libkae`
-- `libkperf`
-- `libummu`
-- `libvirt`
-- `libwd`
-- `libxml2-rust`
-- `linux-operation`
-- `liteview`
-- `llm_solution`
-- `llvm-project`
-- `llvm-ub`
-- `lxcfs-tools`
-- `lzu-icc-nsg`
-- `m1600-driver`
-- `marketing`
-- `masstree`
-- `mate-desktop`
-- `mcp`
-- `mcp-self-service-vue`
-- `mcp-servers`
-- `mcp-testkit`
-- `mcp-vue`
-- `mcs`
-- `mem_hot`
-- `memlinkd`
-- `memory-scan`
-- `memwatch`
-- `meta-openeuler`
-- `micro-certification`
-- `migration-assistant`
-- `migration-tools`
-- `modelengine`
-- `mqtt-operator`
-- `mqtt-proxy`
-- `mugen`
-- `nankai_university_2021`
-- `native-turbo`
-- `native-turbo-kernel`
-- `nestos-assembler`
-- `nestos-config`
-- `nestos-installer`
-- `nestos-kernel`
-- `nestos-kubernetes-deployer`
-- `nestos-website`
-- `nodejsporter`
-- `numafast`
-- `nvme-snsd`
-- `nvwa`
-- `nvwa-cve-fixer`
-- `oac`
-- `obmm`
-- `oe-performance`
-- `oeAware-collector`
-- `oeAware-manager`
-- `oeAware-scenario`
-- `oeAware-tune`
-- `oeDeploy`
-- `oeDevPlugin`
-- `oeGitExt`
-- `oebuild`
-- `oec-application`
-- `oec-cloud`
-- `oec-hardware`
-- `oecp`
-- `oee_archive`
-- `oemaker`
-- `omnidata-hive-connector`
-- `oncn-bwm`
-- `open-eBackup`
-- `open-source-summer`
-- `openAMDC`
-- `openEuler-Advisor`
-- `openEuler-agreements`
-- `openEuler-bootstrap`
-- `openEuler-lsb`
-- `openEuler-menus`
-- `openEuler-pkginfo`
-- `openEuler-portal`
-- `openEuler-portal-ar`
-- `openEuler-portal-mcp`
-- `openEuler-rpm-config`
-- `openEuler_chroot`
-- `openRSO`
-- `opendesign`
-- `opendesign-analytics`
-- `opendesign-backend`
-- `opendesign-components`
-- `opendesign-datastat`
-- `opendesign-deployment`
-- `opendesign-internship`
-- `opendesign-miniprogram`
-- `opendesign-resources`
-- `opendesign-skills`
-- `opendesign-templates`
-- `opendesign-token`
-- `openeuler-docker-images`
-- `openeuler-intelligence-sandbox`
-- `openeuler-jenkins`
-- `openeuler-obs`
-- `openeuler-os-build`
-- `openeuler-upgrader`
-- `openeuler-wiki-bot`
-- `openjfx8`
-- `opensd`
-- `opensource-intern`
-- `openssl`
-- `openstack`
-- `openstack-docs`
-- `openstack-kolla-ansible-plugin`
-- `openstack-kolla-plugin`
-- `openstack-plugin`
-- `openstack-releases`
-- `openstack-releases-adaptation`
-- `openstack-sig-tool`
-- `operator-manager`
-- `optimized-routines`
-- `org-issues`
-- `os-compat-analyzer`
-- `osinfor`
-- `pacemaker-mgmt`
-- `package-reinforce-test`
-- `passwd_group_generator`
-- `patch-tracking`
-- `paws`
-- `peking_university_2021`
-- `perlporter`
-- `phytium-kernel`
-- `pin-for-openEuler`
-- `pin-gcc-client`
-- `pin-llvm-client`
-- `pin-server`
-- `pkgporter`
-- `pkgs-categorizer`
-- `pkgship`
-- `plymouth-theme-kiran`
-- `poissonsearch-oss`
-- `poissonsearch-py`
-- `polymind`
-- `portal-application-license-monitor`
-- `portal-mulit-cluster-script`
-- `powerapi`
-- `prefetch_tuning`
-- `presentations`
-- `process-healer`
-- `ptcr`
-- `pyisula`
-- `pyporter`
-- `python-multi_key_dict`
-- `pyuadk`
-- `qax-gm-certificates`
-- `qemu`
-- `qingzhou`
-- `qla2xxx`
-- `qt6`
-- `quick-issue`
-- `radiaTest`
-- `raspberrypi`
-- `raspberrypi-build`
-- `raspberrypi-kernel`
-- `rat`
-- `ray-adapter`
-- `re2-rust`
-- `release-management`
-- `release-tools`
-- `reproducible-builds`
-- `resaware_nri_plugins`
-- `rhostname`
-- `riscv-kernel`
-- `rockchip`
-- `rockchip-kernel`
-- `rocketmq-operator`
-- `rootfs-maker`
-- `ros`
-- `ros-porting-tools`
-- `rpmdepsearch`
-- `rubik`
-- `rubyporter`
-- `rust_shyper`
-- `safeguard`
-- `safeguard-web`
-- `sbom-files`
-- `sbom-service`
-- `sbom-tools`
-- `sbom-website`
-- `scf-security`
-- `sdma-dk`
-- `sds_doc`
-- `secDetector`
-- `secGear`
-- `seccom-tee`
-- `secpaver`
-- `secscanner`
-- `secureguardian`
-- `security-baseline`
-- `security-committee`
-- `security-facility`
-- `security-tool`
-- `service_capability`
-- `service_trainning`
-- `shim-review`
-- `sig-Edge`
-- `sig-OSCourse`
-- `sig-OpenBoard`
-- `signatrust`
-- `sionlib`
-- `skills`
-- `skylark`
-- `skyline-apiserver`
-- `skyline-console`
-- `slice-releases`
-- `smart-shell`
-- `sonic-linux-kernel`
-- `space-doc-spec`
-- `spdk`
-- `splitter`
-- `spring-adapter`
-- `sra_benchmark`
-- `sra_onnxruntime_adapter`
-- `sra_scann_adapter`
-- `sra_tensorflow_adapter`
-- `sra_test`
-- `sra_tvm_adapter`
-- `ssh-utils`
-- `sssnic-driver`
-- `storprototrace`
-- `stortrace`
-- `stratovirt`
-- `summer2022`
-- `sw-committee`
-- `sync-bot`
-- `sysHAX`
-- `sysHAX-adapter`
-- `sysSentry`
-- `sysTrace`
-- `sysboost`
-- `syscare`
-- `syscontainer-tools`
-- `syskits`
-- `sysmaster`
-- `sysmonitor`
-- `taishan-oslab`
-- `talent-assessment`
-- `tarsier`
-- `tcas`
-- `tcas-cli`
-- `technical-certification`
-- `tee-gp-proxy`
-- `tensormsg`
-- `test-tools`
-- `tool-collections`
-- `tp-libvirt`
-- `tp-qemu`
-- `triton-cpu`
-- `trivy`
-- `trucker`
-- `txgbe-driver`
-- `uadk`
-- `uadk-bigdata`
-- `uadk_engine`
-- `ub-dhcp`
-- `ub-lldpd`
-- `ub-pkg-manager`
-- `ubackup`
-- `ubctl`
-- `ubs-atomic`
-- `ubs-comm`
-- `ubs-core`
-- `ubs-engine`
-- `ubs-io`
-- `ubs-mem`
-- `ubs-test`
-- `ubs-virt`
-- `ubturbo`
-- `ubutils`
-- `ukui`
-- `ukui-themes`
-- `umdk`
-- `unizip`
-- `uos-dovecot-exporter`
-- `uos-iptables-exporter`
-- `uos-libvirtd-exporter`
-- `uos-mgmt-exporter`
-- `uos-network-exporter`
-- `uos-openldap-exporter`
-- `uos-squid-exporter`
-- `uos-syslog-ng-exporter`
-- `uos-tc-exporter`
-- `uos-time-exporter`
-- `uos-uwsgi-exporter`
-- `user-committee`
-- `utcpio`
-- `utdnsmasq`
-- `utipmitool`
-- `utiputils`
-- `utpam`
-- `utpasswd`
-- `utshell`
-- `utsudo`
-- `utxz`
-- `utzip`
-- `uwal`
-- `vectorBlas`
-- `velox`
-- `virtCCA_driver`
-- `virtCCA_sdk`
-- `vmtop`
-- `vs2qt`
-- `vtopia-agent`
-- `wayca-scheduler`
-- `wayca-scheduler-bench`
-- `website`
-- `website-v2`
-- `wine-app`
-- `wisdom-advisor`
-- `witty`
-- `witty-diagnosis-agent`
-- `witty-framework`
-- `witty-opencode`
-- `witty-opentunex`
-- `witty-ops-cases`
-- `witty-profiler`
-- `witty-service`
-- `witty-ub`
-- `workflowkits`
-- `wsl`
-- `wuhan_uni_tech_2021`
-- `x2nestos`
-- `xenomai`
-- `xflex`
-- `xiaoO`
-- `xlin-sbom`
-- `xlin-sbom-analysis`
-- `xmig`
-- `xmlpull`
-- `xsched`
-- `yocto-embedded-tools`
-- `yocto-meta-arm`
-- `yocto-meta-openembedded`
-- `yocto-meta-openeuler`
-- `yocto-meta-phosphor`
-- `yocto-meta-qt5`
-- `yocto-meta-raspberrypi`
-- `yocto-meta-renesas`
-- `yocto-meta-rockchip`
-- `yocto-meta-ros`
-- `yocto-meta-st`
-- `yocto-meta-virtualization`
-- `yocto-poky`
-- `yuanrong`
-- `yuanrong-agentruntime`
-- `yuanrong-datasystem`
-- `yuanrong-frontend`
-- `yuanrong-functionsystem`
-- `yuanrong-serve`
-- `yunyi`
-- `zephyr-cn`
-- `zvm`
+- ... and 616 more
 
 </details>
 
