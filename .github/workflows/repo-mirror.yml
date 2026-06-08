@@ -64,6 +64,7 @@ jobs:
         batch_list: ${{ fromJSON(needs.prepare.outputs.batches) }}
     steps:
     - name: Mirror batch
+      id: mirror
       continue-on-error: true
       uses: Yikun/hub-mirror-action@master
       with:
@@ -79,6 +80,35 @@ jobs:
         static_list: ${{ matrix.batch_list }}
         # lfs: true   ← 去掉 — 800 个仓库大部分不需要 LFS，
         #                真有 LFS 需求单独建 workflow 处理
+
+    - name: Check batch repos on destination
+      if: always()
+      run: |
+        FAILED="[]"
+        MISSING_COUNT=0
+        for repo in $(echo '${{ matrix.batch_list }}' | tr ',' ' '); do
+          code=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: token ${{ secrets.SYNC_EULER_TOKEN }}" \
+            "https://api.github.com/repos/openeuler-mirror/$repo")
+          if [ "$code" != "200" ]; then
+            FAILED=$(echo "$FAILED" | jq -c ". + [\"$repo\"]")
+            MISSING_COUNT=$((MISSING_COUNT + 1))
+          fi
+        done
+        jq -n \
+          --argjson failed "$FAILED" \
+          --arg outcome "${{ steps.mirror.outcome }}" \
+          '{failed: $failed, outcome: $outcome, missing_count: ($failed | length)}' \
+          > batch_report.json
+        echo "Batch report: $MISSING_COUNT repos missing, mirror outcome=${{ steps.mirror.outcome }}"
+
+    - name: Upload batch report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: batch-report-${{ strategy.job-index }}
+        path: batch_report.json
+        retention-days: 1
 
   # ── Job 3: Aggregate results, update README, deploy gh-pages ──
   aggregate:
@@ -165,6 +195,50 @@ jobs:
         print(f"📦 Already existed before:   {len(existing_list)}")
         print(f"❌ Still failed:             {results['failed']}")
         print(f"⏭️ Skipped (black_list etc): {results['skipped']}")
+        PYEOF
+
+    - name: Download batch reports
+      uses: actions/download-artifact@v4
+      with:
+        pattern: batch-report-*
+        path: batch-reports
+
+    - name: Merge batch reports into results
+      run: |
+        python3 << PYEOF
+        import json, glob, os
+
+        with open("results.json") as f:
+            results = json.load(f)
+
+        batch_failed = []
+        batch_errors = 0
+
+        for report_file in sorted(glob.glob("batch-reports/batch-report-*/batch_report.json")):
+            with open(report_file) as f:
+                report = json.load(f)
+            for repo in report.get("failed", []):
+                if repo not in batch_failed:
+                    batch_failed.append(repo)
+            if report.get("outcome") == "failure":
+                batch_errors += 1
+
+        # Merge: add batch-level failures that the global check might have missed
+        existing_failed = set(results.get("failed_list", []))
+        for repo in batch_failed:
+            existing_failed.add(repo)
+
+        results["failed_list"] = sorted(existing_failed)
+        results["failed"] = len(results["failed_list"])
+        results["batch_errors"] = batch_errors  # how many batches had mirror errors
+
+        with open("results.json", "w") as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
+
+        print(f"📋 {len(glob.glob('batch-reports/batch-report-*/batch_report.json'))} batch reports collected")
+        print(f"🆕 Batch-level missing repos: {len(batch_failed)}")
+        print(f"⚠️  Batches with mirror errors: {batch_errors}")
+        print(f"❌ Total failed (merged): {results['failed']}")
         PYEOF
 
     - name: Update README with sync status
