@@ -38,21 +38,6 @@ jobs:
           --black-list "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" \
           --batch-size 80
 
-    - name: Snapshot destination repos (pre-mirror)
-      run: |
-        python _mirror-hub/scripts/snapshot_dst.py \
-          --dst github/openeuler-mirror \
-          --dst-token "${{ secrets.SYNC_EULER_TOKEN }}" \
-          --account-type org \
-          --output pre_dst.json
-
-    - name: Upload pre-mirror snapshot
-      uses: actions/upload-artifact@v4
-      with:
-        name: pre-dst-snapshot
-        path: pre_dst.json
-        retention-days: 1
-
   # ── Job 2: Mirror each batch in parallel (matrix) ──
   mirror:
     name: mirror-batch-${{ strategy.job-index }}
@@ -196,38 +181,6 @@ jobs:
         python _mirror-hub/scripts/merge_results.py results.json \
           --merge-url "$MERGE_URL" \
           --output results.json
-
-    - name: Download pre-mirror snapshot
-      uses: actions/download-artifact@v4
-      with:
-        name: pre-dst-snapshot
-
-    - name: Diff pre vs post mirror
-      run: |
-        python3 << PYEOF
-        import json
-
-        with open("results.json") as f:
-            results = json.load(f)
-        with open("pre_dst.json") as f:
-            pre_dst = set(json.load(f))
-
-        new_list = [r for r in results["success_list"] if r not in pre_dst]
-        existing_list = [r for r in results["success_list"] if r in pre_dst]
-
-        results["new_list"] = new_list
-        results["existing_list"] = existing_list
-        results["new_count"] = len(new_list)
-        results["existing_count"] = len(existing_list)
-
-        with open("results.json", "w") as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
-
-        print(f"✅ Newly synced (this run):  {len(new_list)}")
-        print(f"📦 Already existed before:   {len(existing_list)}")
-        print(f"❌ Still failed:             {results['failed']}")
-        print(f"⏭️ Skipped (black_list etc): {results['skipped']}")
-        PYEOF
 
     - name: Download batch reports
       uses: actions/download-artifact@v4
