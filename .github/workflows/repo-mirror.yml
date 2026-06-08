@@ -49,64 +49,42 @@ jobs:
       matrix:
         batch_list: ${{ fromJSON(needs.prepare.outputs.batches) }}
     steps:
+    - name: Checkout community-mirror (scripts)
+      uses: actions/checkout@v4
+      with:
+        repository: huanglei0308/community-mirror
+        path: _mirror-hub
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install gitpython requests -q
+
     - name: Mirror batch
       id: mirror
       continue-on-error: true
-      uses: Yikun/hub-mirror-action@master
-      with:
-        src: gitcode/openeuler
-        dst: github/openeuler-mirror
-        src_token: ${{ secrets.SYNC_GITCODE_TOKEN }}
-        dst_key: ${{ secrets.SYNC_EULER_PRIVATE_KEY }}
-        dst_token: ${{ secrets.SYNC_EULER_TOKEN }}
-        account_type: org
-        clone_style: ssh
-        force_update: true
-        debug: true
-        static_list: ${{ matrix.batch_list }}
-
-    - name: Extract hub-mirror-action results from log
-      if: always()
       run: |
-        # Use gh CLI to download this job's log — handles auth/redirect properly
-        JOB_NAME="mirror-batch-${{ strategy.job-index }}"
+        python _mirror-hub/scripts/mirror_repos.py \
+          --src gitcode/openeuler \
+          --dst github/openeuler-mirror \
+          --src-token "${{ secrets.SYNC_GITCODE_TOKEN }}" \
+          --dst-token "${{ secrets.SYNC_EULER_TOKEN }}" \
+          --dst-key "${{ secrets.SYNC_EULER_PRIVATE_KEY }}" \
+          --account-type org \
+          --static-list "${{ matrix.batch_list }}" \
+          --force-update \
+          --clone-style ssh \
+          --output batch_results.json
 
-        JOB_ID=$(gh api \
-          "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs?per_page=100" \
-          --jq ".jobs[] | select(.name == \"$JOB_NAME\") | .id")
-
-        echo "Job: $JOB_NAME → ID=$JOB_ID"
-
-        gh api "repos/${{ github.repository }}/actions/jobs/$JOB_ID/logs" > job_log.txt 2>/dev/null
-        echo "Log: $(wc -c < job_log.txt) bytes"
-
-        FAILED_LINE=$(grep "INFO:hubmirror:Failed:" job_log.txt | tail -1)
-        grep "INFO:hubmirror:Total:" job_log.txt | tail -1 || true
-
-        if [ -n "$FAILED_LINE" ]; then
-          FAILED_JSON=$(echo "$FAILED_LINE" \
-            | sed 's/.*Failed: //' \
-            | sed "s/'/\"/g" \
-            | jq -c '.')
-        else
-          FAILED_JSON="[]"
-        fi
-
-        jq -n --argjson failed "$FAILED_JSON" \
-          '{failed: $failed, failed_count: ($failed | length)}' \
-          > batch_report.json
-
-        echo "Failed: $(jq -r .failed_count batch_report.json)"
-        jq -r '.failed[]' batch_report.json 2>/dev/null | while read repo; do
-          echo "   - $repo"
-        done
-
-    - name: Upload batch report
+    - name: Upload batch results
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: batch-report-${{ strategy.job-index }}
-        path: batch_report.json
+        name: batch-results-${{ strategy.job-index }}
+        path: batch_results.json
         retention-days: 1
 
   # ── Job 3: Aggregate results, update README, deploy gh-pages ──
@@ -130,20 +108,58 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Check sync status (all repos)
-      id: status
+    - name: Download all batch results
+      uses: actions/download-artifact@v4
+      with:
+        pattern: batch-results-*
+        path: batch-results
+
+    - name: Merge batch results into one results.json
+      run: |
+        python3 << PYEOF
+        import json, glob, os
+
+        results = {
+            "src": "gitcode/openeuler",
+            "dst": "github/openeuler-mirror",
+            "workflow": "repo-mirror",
+            "total": 0, "success": 0, "failed": 0, "skipped": 0,
+            "success_list": [], "failed_list": [], "skipped_list": [],
+            "errors": {},
+        }
+
+        for f in sorted(glob.glob("batch-results/batch-results-*/batch_results.json")):
+            with open(f) as fp:
+                b = json.load(fp)
+            results["total"] += b.get("total", 0)
+            results["success"] += b.get("success", 0)
+            results["failed"] += b.get("failed", 0)
+            results["skipped"] += b.get("skipped", 0)
+            results["success_list"].extend(b.get("success_list", []))
+            results["failed_list"].extend(b.get("failed_list", []))
+            results["skipped_list"].extend(b.get("skipped_list", []))
+            results["errors"].update(b.get("errors", {}))
+
+        results["timestamp"] = __import__("time").strftime(
+            "%Y-%m-%dT%H:%M:%SZ", __import__("time").gmtime())
+
+        with open("results.json", "w") as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
+
+        print(f"Total: {results['total']} = "
+              f"S:{results['success']} + F:{results['failed']} + Sk:{results['skipped']}")
+        PYEOF
+
+    - name: Diagnose failures
       continue-on-error: true
       run: |
         pip install requests -q
-        python _mirror-hub/scripts/check_sync_status.py \
+        python _mirror-hub/scripts/diagnose_failures.py results.json \
           --src gitcode/openeuler \
           --dst github/openeuler-mirror \
           --src-token "${{ secrets.SYNC_GITCODE_TOKEN }}" \
           --dst-token "${{ secrets.SYNC_EULER_TOKEN }}" \
-          --account-type org \
-          --black-list "kernel,qemu,raspberrypi,raspberrypi-kernel,website-v2" \
-          --workflow-name "repo-mirror" \
-          --output results.json
+          --account-type org
 
     - name: Merge with existing results on gh-pages
       run: |
@@ -153,76 +169,6 @@ jobs:
         python _mirror-hub/scripts/merge_results.py results.json \
           --merge-url "$MERGE_URL" \
           --output results.json
-
-    - name: Download batch reports
-      uses: actions/download-artifact@v4
-      with:
-        pattern: batch-report-*
-        path: batch-reports
-
-    - name: Merge batch reports into results
-      run: |
-        python3 << PYEOF
-        import json, glob
-
-        with open("results.json") as f:
-            results = json.load(f)
-
-        # Collect hub-mirror-action failures from batch reports
-        batch_failed = []
-        for report_file in sorted(glob.glob("batch-reports/batch-report-*/batch_report.json")):
-            with open(report_file) as f:
-                report = json.load(f)
-            for repo in report.get("failed", []):
-                if repo not in batch_failed:
-                    batch_failed.append(repo)
-
-        batch_failed_set = set(batch_failed)
-
-        # Rebuild ALL lists ensuring each repo appears in exactly ONE list
-        # This fixes the bug where batch_failed repos were also in success_list
-        success_set = set(results.get("success_list", []))
-        api_failed_set = set(results.get("failed_list", []))
-        skipped_set = set(results.get("skipped_list", []))
-
-        # Remove batch_failed repos from success and skipped
-        success_set -= batch_failed_set
-        skipped_set -= batch_failed_set
-
-        # Union: API failures + batch failures
-        all_failed = api_failed_set | batch_failed_set
-
-        results["success_list"] = sorted(success_set)
-        results["success"] = len(success_set)
-        results["failed_list"] = sorted(all_failed)
-        results["failed"] = len(all_failed)
-        results["skipped_list"] = sorted(skipped_set)
-        results["skipped"] = len(skipped_set)
-        results["total"] = len(success_set) + len(all_failed) + len(skipped_set)
-
-        results["batch_failed_list"] = sorted(batch_failed)
-        results["batch_failed_count"] = len(batch_failed)
-        results["batch_reports"] = len(glob.glob("batch-reports/batch-report-*/batch_report.json"))
-
-        with open("results.json", "w") as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
-
-        print(f"📋 {results['batch_reports']} batch reports collected")
-        print(f"❌ hub-mirror-action failed: {results['batch_failed_count']}")
-        print(f"❌ API detected missing: {len(api_failed_set - batch_failed_set)}")
-        print(f"❌ Total failed (merged): {results['failed']}")
-        print(f"📊 Total={results['total']} = Success({results['success']}) + Failed({results['failed']}) + Skipped({results['skipped']})")
-        PYEOF
-
-    - name: Diagnose failures (all sources)
-      continue-on-error: true
-      run: |
-        python _mirror-hub/scripts/diagnose_failures.py results.json \
-          --src gitcode/openeuler \
-          --dst github/openeuler-mirror \
-          --src-token "${{ secrets.SYNC_GITCODE_TOKEN }}" \
-          --dst-token "${{ secrets.SYNC_EULER_TOKEN }}" \
-          --account-type org
 
     - name: Update README with sync status
       run: python update_readme.py

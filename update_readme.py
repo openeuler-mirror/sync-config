@@ -15,14 +15,11 @@ total = data.get("total", 0)
 ts = data.get("timestamp", "N/A")
 src = data.get("src", "")
 dst = data.get("dst", "")
+errors = data.get("errors", {})
 diagnoses = data.get("diagnoses", {})
-
-batch_failed_count = data.get("batch_failed_count", 0)
 
 if failed > 0:
     overall = f"⚠️ **{failed} repo(s) failed**"
-elif batch_failed_count > 0:
-    overall = f"⚠️ **{batch_failed_count} repo(s) push failed** (HEAD mismatch)"
 else:
     overall = "✅ All repos synced successfully"
 
@@ -40,22 +37,13 @@ if failed_list:
     md += "### ❌ Failed Repos\n\n"
     for r in failed_list:
         md += f"- `{r}`\n"
+        if r in errors:
+            md += f"  - {errors[r][:200]}\n"
         if r in diagnoses:
             for d in diagnoses[r]:
                 md += f"  - {d}\n"
         md += "\n"
     md += "[🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)\n\n"
-
-if batch_failed_count > 0:
-    batch_failed_list = data.get("batch_failed_list", [])
-    md += f"### ❌ Push Failed (HEAD mismatch)\n\n"
-    for r in batch_failed_list:
-        md += f"- `{r}`\n"
-        if r in diagnoses:
-            for d in diagnoses[r]:
-                md += f"  - {d}\n"
-        md += "\n"
-    md += "[🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions) for details.\n\n"
 
 if skipped_list:
     md += "<details>\n<summary><b>⏭️ Skipped Repos ({})</b></summary>\n\n".format(len(skipped_list))
@@ -65,7 +53,7 @@ if skipped_list:
 
 if success_list:
     md += "<details>\n<summary><b>✅ Synced Repos ({})</b></summary>\n\n".format(len(success_list))
-    for r in success_list[:200]:  # cap at 200 to avoid giant README
+    for r in success_list[:200]:
         md += f"- `{r}`\n"
     if len(success_list) > 200:
         md += f"- ... and {len(success_list) - 200} more\n"
