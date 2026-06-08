@@ -43,6 +43,7 @@ jobs:
           --static-list "stratovirt" \
           --force-update \
           --clone-style ssh \
+          --workflow high \
           --output results.json
 
     - name: Diagnose failures

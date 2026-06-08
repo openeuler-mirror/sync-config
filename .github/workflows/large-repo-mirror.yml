@@ -44,6 +44,7 @@ jobs:
           --force-update \
           --clone-style ssh \
           --timeout 1h \
+          --workflow large-repo-mirror \
           --output results.json
 
     - name: Diagnose failures
