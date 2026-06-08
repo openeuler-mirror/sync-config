@@ -1,12 +1,12 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "high-priority",
-  "timestamp": "2026-06-08T03:00:48Z",
-  "total": 818,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-08T05:05:54Z",
+  "total": 821,
   "success": 816,
   "skipped": 0,
-  "failed": 2,
+  "failed": 113,
   "success_list": [
     "A-FOT",
     "A-Ops",
@@ -826,19 +826,685 @@
     "zvm"
   ],
   "failed_list": [
+    "A-SysArmor",
+    "BiShengCLanguage",
+    "Conch",
+    "IB_Robot",
+    "KASandbox",
+    "KubeMate",
+    "LinQuickRec",
+    "PilotGo-plugins",
+    "RAM-A",
+    "ag-cli",
+    "agent-insight",
+    "arkui-linux",
+    "bigtop-manager",
+    "bishengjdk-21",
+    "bishengjdk-25",
+    "bishengjdk-build",
+    "btfhub",
+    "cinderx",
+    "cu-cockpit",
+    "cu-concrete",
+    "cu-scanner",
+    "docs",
+    "docs-centralized",
+    "dpu-utilities",
+    "euler-copilot-rag",
+    "expert-kit",
+    "ft_engine",
+    "gala-docs",
+    "global-trust-authority",
+    "hotpatch_meta",
+    "hpc",
+    "hygon-kernel",
     "intel-kernel",
-    "openEuler"
+    "intel-lkvs",
+    "kernel-cloudnative",
+    "kiran-authentication-service",
+    "kiran-biometrics",
+    "kiran-calculator",
+    "kiran-calendar",
+    "kiran-cc-daemon",
+    "kiran-control-panel",
+    "kiran-desktop",
+    "kiran-flameshot",
+    "kiran-gtk-theme",
+    "kiran-icon-theme",
+    "kiran-log",
+    "kiran-menu",
+    "kiran-panel",
+    "kiran-qdbusxml2cpp",
+    "kiran-qt5-integration",
+    "kiran-screensaver",
+    "kiran-session-guard",
+    "kiran-session-manager",
+    "kiran-widgets-qt5",
+    "knet",
+    "ks-scmc",
+    "ks-scmc-gui",
+    "ks-ssr",
+    "ks-vaudit",
+    "ktib",
+    "lerobot_ros2",
+    "libarchive-rust",
+    "llm_solution",
+    "llvm-project",
+    "lzu-icc-nsg",
+    "migration-tools",
+    "mugen",
+    "nestos-kubernetes-deployer",
+    "nvme-snsd",
+    "nvwa-cve-fixer",
+    "oee_archive",
+    "openEuler",
+    "opendesign-analytics",
+    "opendesign-internship",
+    "opendesign-skills",
+    "opendesign-token",
+    "opensource-intern",
+    "openssl",
+    "presentations",
+    "ray-adapter",
+    "rhostname",
+    "ros-porting-tools",
+    "rust_shyper",
+    "seccom-tee",
+    "signatrust",
+    "skills",
+    "sra_test",
+    "sysHAX-adapter",
+    "syskits",
+    "sysmaster",
+    "uadk",
+    "uadk_engine",
+    "ubs-comm",
+    "ubs-engine",
+    "ubs-io",
+    "ubs-virt",
+    "virtCCA_sdk",
+    "witty-diagnosis-agent",
+    "witty-framework",
+    "witty-opencode",
+    "witty-ops-cases",
+    "witty-ub",
+    "x2nestos",
+    "xiaoO",
+    "yocto-embedded-tools",
+    "yocto-meta-openembedded",
+    "yocto-meta-qt5",
+    "yocto-meta-renesas",
+    "yocto-meta-ros",
+    "yuanrong",
+    "yuanrong-frontend",
+    "yuanrong-sandbox-sdk",
+    "zvm"
   ],
   "skipped_list": [],
   "diagnoses": {
+    "A-SysArmor": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "BiShengCLanguage": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "Conch": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "IB_Robot": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "KASandbox": [
+      "Source: accessible",
+      "Destination: Source repo not found or not accessible with current token",
+      "Cached: not found (download may have failed)"
+    ],
+    "KubeMate": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "LinQuickRec": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "PilotGo-plugins": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "RAM-A": [
+      "Source: accessible",
+      "Destination: Source repo not found or not accessible with current token",
+      "Cached: not found (download may have failed)"
+    ],
+    "ag-cli": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "agent-insight": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "arkui-linux": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "bigtop-manager": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "bishengjdk-21": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "bishengjdk-25": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "bishengjdk-build": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "btfhub": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "cinderx": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "cu-cockpit": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "cu-concrete": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "cu-scanner": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "docs": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "docs-centralized": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "dpu-utilities": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "euler-copilot-rag": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "expert-kit": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ft_engine": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "gala-docs": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "global-trust-authority": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "hotpatch_meta": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "hpc": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "hygon-kernel": [
+      "Source: accessible",
+      "Destination: Repo is very large (2606MB) — may have timed out",
+      "Cached: not found (download may have failed)"
+    ],
     "intel-kernel": [
       "Source: accessible",
       "Destination: Repo is very large (2641MB) — may have timed out",
       "Cached: not found (download may have failed)"
     ],
+    "intel-lkvs": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kernel-cloudnative": [
+      "Source: accessible",
+      "Destination: Repo is very large (1814MB) — may have timed out",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-authentication-service": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-biometrics": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-calculator": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-calendar": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-cc-daemon": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-control-panel": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-desktop": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-flameshot": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-gtk-theme": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-icon-theme": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-log": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-menu": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-panel": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-qdbusxml2cpp": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-qt5-integration": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-screensaver": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-session-guard": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-session-manager": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kiran-widgets-qt5": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "knet": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ks-scmc": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ks-scmc-gui": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ks-ssr": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ks-vaudit": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ktib": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "lerobot_ros2": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "libarchive-rust": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "llm_solution": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "llvm-project": [
+      "Source: accessible",
+      "Destination: Repo is very large (3136MB) — may have timed out",
+      "Cached: not found (download may have failed)"
+    ],
+    "lzu-icc-nsg": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "migration-tools": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "mugen": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "nestos-kubernetes-deployer": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "nvme-snsd": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "nvwa-cve-fixer": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "oee_archive": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
     "openEuler": [
       "Source: API returned HTTP 400",
       "Destination: Source repo not found or not accessible with current token",
+      "Cached: not found (download may have failed)"
+    ],
+    "opendesign-analytics": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "opendesign-internship": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "opendesign-skills": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "opendesign-token": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "opensource-intern": [
+      "Source: accessible",
+      "Destination: Repo is very large (1084MB) — may have timed out",
+      "Cached: not found (download may have failed)"
+    ],
+    "openssl": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "presentations": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ray-adapter": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "rhostname": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ros-porting-tools": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "rust_shyper": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "seccom-tee": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "signatrust": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "skills": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "sra_test": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "sysHAX-adapter": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "syskits": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "sysmaster": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "uadk": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "uadk_engine": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ubs-comm": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ubs-engine": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ubs-io": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ubs-virt": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "virtCCA_sdk": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "witty-diagnosis-agent": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "witty-framework": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "witty-opencode": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "witty-ops-cases": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "witty-ub": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "x2nestos": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "xiaoO": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "yocto-embedded-tools": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "yocto-meta-openembedded": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "yocto-meta-qt5": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "yocto-meta-renesas": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "yocto-meta-ros": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "yuanrong": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "yuanrong-frontend": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "yuanrong-sandbox-sdk": [
+      "Source: accessible",
+      "Destination: Source repo not found or not accessible with current token",
+      "Cached: not found (download may have failed)"
+    ],
+    "zvm": [
+      "Source: accessible",
+      "Destination: exists",
       "Cached: not found (download may have failed)"
     ]
   },
@@ -851,10 +1517,10 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-07T07:38:15Z",
-      "total": 818,
+      "timestamp": "2026-06-08T05:05:54Z",
+      "total": 821,
       "success": 811,
-      "failed": 2,
+      "failed": 5,
       "skipped": 5
     },
     "large-repo-mirror": {
@@ -864,5 +1530,119 @@
       "failed": 0,
       "skipped": 0
     }
-  }
+  },
+  "batch_failed_list": [
+    "A-SysArmor",
+    "BiShengCLanguage",
+    "Conch",
+    "IB_Robot",
+    "KubeMate",
+    "LinQuickRec",
+    "PilotGo-plugins",
+    "ag-cli",
+    "agent-insight",
+    "arkui-linux",
+    "bigtop-manager",
+    "bishengjdk-21",
+    "bishengjdk-25",
+    "bishengjdk-build",
+    "btfhub",
+    "cinderx",
+    "cu-cockpit",
+    "cu-concrete",
+    "cu-scanner",
+    "docs",
+    "docs-centralized",
+    "dpu-utilities",
+    "euler-copilot-rag",
+    "expert-kit",
+    "ft_engine",
+    "gala-docs",
+    "global-trust-authority",
+    "hotpatch_meta",
+    "hpc",
+    "hygon-kernel",
+    "intel-kernel",
+    "intel-lkvs",
+    "kernel-cloudnative",
+    "kiran-authentication-service",
+    "kiran-biometrics",
+    "kiran-calculator",
+    "kiran-calendar",
+    "kiran-cc-daemon",
+    "kiran-control-panel",
+    "kiran-desktop",
+    "kiran-flameshot",
+    "kiran-gtk-theme",
+    "kiran-icon-theme",
+    "kiran-log",
+    "kiran-menu",
+    "kiran-panel",
+    "kiran-qdbusxml2cpp",
+    "kiran-qt5-integration",
+    "kiran-screensaver",
+    "kiran-session-guard",
+    "kiran-session-manager",
+    "kiran-widgets-qt5",
+    "knet",
+    "ks-scmc",
+    "ks-scmc-gui",
+    "ks-ssr",
+    "ks-vaudit",
+    "ktib",
+    "lerobot_ros2",
+    "libarchive-rust",
+    "llm_solution",
+    "llvm-project",
+    "lzu-icc-nsg",
+    "migration-tools",
+    "mugen",
+    "nestos-kubernetes-deployer",
+    "nvme-snsd",
+    "nvwa-cve-fixer",
+    "oee_archive",
+    "openEuler",
+    "opendesign-analytics",
+    "opendesign-internship",
+    "opendesign-skills",
+    "opendesign-token",
+    "opensource-intern",
+    "openssl",
+    "presentations",
+    "ray-adapter",
+    "rhostname",
+    "ros-porting-tools",
+    "rust_shyper",
+    "seccom-tee",
+    "signatrust",
+    "skills",
+    "sra_test",
+    "sysHAX-adapter",
+    "syskits",
+    "sysmaster",
+    "uadk",
+    "uadk_engine",
+    "ubs-comm",
+    "ubs-engine",
+    "ubs-io",
+    "ubs-virt",
+    "virtCCA_sdk",
+    "witty-diagnosis-agent",
+    "witty-framework",
+    "witty-opencode",
+    "witty-ops-cases",
+    "witty-ub",
+    "x2nestos",
+    "xiaoO",
+    "yocto-embedded-tools",
+    "yocto-meta-openembedded",
+    "yocto-meta-qt5",
+    "yocto-meta-renesas",
+    "yocto-meta-ros",
+    "yuanrong",
+    "yuanrong-frontend",
+    "zvm"
+  ],
+  "batch_failed_count": 110,
+  "batch_reports": 11
 }
