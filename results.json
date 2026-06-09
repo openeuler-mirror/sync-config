@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "high",
-  "timestamp": "2026-06-09T00:05:48Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-09T02:34:16Z",
   "total": 821,
   "success": 778,
   "skipped": 0,
@@ -872,7 +872,7 @@
     },
     "BiShengCLanguage": {
       "category": "large_file",
-      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang.so.12 is 69.71 MB, exceeds GitHub 100 MB limit"
+      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang-cpp.so.12 is 98.37 MB, exceeds GitHub 100 MB limit"
     },
     "zvm": {
       "category": "large_file",
@@ -904,11 +904,11 @@
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends_humble/slam-toolbox/2.6.3-1.tar.gz is 51.23 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
-      "message": "docs/zh/contribute/public_sys_resources/docmate_check.gif is 91.37 MB, exceeds GitHub 100 MB limit"
+      "message": "docs/zh/contribute/public_sys_resources/docmate_rewrite.gif is 80.37 MB, exceeds GitHub 100 MB limit"
     },
     "ubs-io": {
       "category": "repo_not_found",
@@ -940,7 +940,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz is 198.22 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -1233,7 +1233,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-08T14:44:43Z",
+      "timestamp": "2026-06-09T02:34:16Z",
       "total": 816,
       "success": 773,
       "failed": 43,
