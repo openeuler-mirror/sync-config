@@ -1,12 +1,12 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-09T05:51:05Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-09T06:39:16Z",
   "total": 821,
-  "success": 777,
+  "success": 775,
   "skipped": 0,
-  "failed": 44,
+  "failed": 46,
   "success_list": [
     "A-FOT",
     "A-Ops",
@@ -44,7 +44,6 @@
     "DDE-GoCode",
     "DevStore",
     "DiffSynth-Engine",
-    "DyscheOS-kernel",
     "DyscheOS-meta",
     "DyscheOS-utils",
     "EulerCopilot",
@@ -606,7 +605,6 @@
     "resaware_nri_plugins",
     "rhostname",
     "rockchip",
-    "rockchip-kernel",
     "rocketmq-operator",
     "rootfs-maker",
     "ros",
@@ -789,6 +787,7 @@
   "failed_list": [
     "A-SysArmor",
     "BiShengCLanguage",
+    "DyscheOS-kernel",
     "OSPerformance",
     "PilotGo-plugins",
     "arkui-linux",
@@ -821,6 +820,7 @@
     "opensource-intern",
     "presentations",
     "riscv-kernel",
+    "rockchip-kernel",
     "skills",
     "sra_test",
     "sysmaster",
@@ -904,11 +904,11 @@
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends_humble/slam-toolbox/2.6.3-1.tar.gz is 51.23 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
-      "message": "docs/zh/contribute/public_sys_resources/docmate_rewrite.gif is 80.37 MB, exceeds GitHub 100 MB limit"
+      "message": "docs/zh/contribute/public_sys_resources/docmate_check.gif is 91.37 MB, exceeds GitHub 100 MB limit"
     },
     "ubs-io": {
       "category": "repo_not_found",
@@ -932,7 +932,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
+      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -940,7 +940,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk25/OpenJDK25U-jdk_x64_linux_hotspot_25.0.1_8.tar.gz is 134.21 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -1009,6 +1009,14 @@
     "kernel": {
       "category": "push_failed",
       "message": "fatal: the remote end hung up unexpectedly"
+    },
+    "DyscheOS-kernel": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "rockchip-kernel": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     }
   },
   "diagnoses": {
@@ -1232,6 +1240,16 @@
       "Destination: Repo is very large (2585MB) — may have timed out",
       "Cached: local copy exists",
       "Cached: valid git repo"
+    ],
+    "DyscheOS-kernel": [
+      "Source: accessible",
+      "Destination: Repo is very large (1633MB) — may have timed out",
+      "Cached: not found (download may have failed)"
+    ],
+    "rockchip-kernel": [
+      "Source: accessible",
+      "Destination: Repo is very large (2562MB) — may have timed out",
+      "Cached: not found (download may have failed)"
     ]
   },
   "workflows": {
@@ -1243,10 +1261,10 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-09T02:34:16Z",
+      "timestamp": "2026-06-09T06:39:16Z",
       "total": 816,
-      "success": 773,
-      "failed": 43,
+      "success": 771,
+      "failed": 45,
       "skipped": 0
     },
     "large-repo-mirror": {
