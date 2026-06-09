@@ -326,16 +326,18 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 ## How It Works
 
-This repository uses [Yikun/hub-mirror-action](https://github.com/Yikun/hub-mirror-action) to mirror repositories from `gitcode/openeuler` to `github/openeuler-mirror`.
+This repository uses scripts from [community-mirror](https://github.com/huanglei0308/community-mirror) (mainly `mirror_repos.py`) to mirror repositories from `gitcode/openeuler` to `github/openeuler-mirror`. The scripts are checked out at runtime — no local copy needed.
 
 ### Workflows
 
 | Workflow | Schedule | Description |
 |----------|----------|-------------|
-| `repo-mirror.yml` | Daily at 01:00 UTC | Mirrors all repos except large ones (kernel, qemu, etc.) |
-| `large-repo-mirror.yml` | Daily at 01:00 UTC | Mirrors large repos with extended timeout |
-| `high.yml` | Every 2 hours | Mirrors high-priority repos (stratovirt) |
+| `repo-mirror.yml` | Daily at 01:00 UTC | Splits all repos into batches of 80, mirrors in parallel (matrix strategy), merges results, updates this README |
+| `large-repo-mirror.yml` | Daily at 01:00 UTC | Mirrors 5 large repos (kernel, qemu, etc.) with 1h timeout per repo |
+| `high.yml` | Every 2 hours | Mirrors high-priority repo (stratovirt) with quick turnaround |
+
+Each workflow uses `mirror_repos.py` to sync code, `diagnose_failures.py` to classify failures, and `merge_results.py` to merge with gh-pages so no workflow overwrites another's results.
 
 ### Status Tracking
 
-Sync status is automatically checked after each mirror run and displayed above. Results are also published to the [Community Mirror Hub](https://huanglei0308.github.io/community-mirror/).
+Sync status is automatically updated in this README after each `repo-mirror` run. Failures are** categorised** (e.g. "File Too Large", "Push Protection Blocked") for easy triage. Results are also published to the [Community Mirror Hub](https://huanglei0308.github.io/community-mirror/).
