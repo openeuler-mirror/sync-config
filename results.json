@@ -1,12 +1,12 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "high",
-  "timestamp": "2026-06-09T05:10:22Z",
+  "workflow": "large-repo-mirror",
+  "timestamp": "2026-06-09T05:51:05Z",
   "total": 821,
-  "success": 778,
+  "success": 777,
   "skipped": 0,
-  "failed": 43,
+  "failed": 44,
   "success_list": [
     "A-FOT",
     "A-Ops",
@@ -377,7 +377,6 @@
     "kbuild-standalone",
     "kconfigDetector",
     "kdnn_torch_adapter",
-    "kernel",
     "kernel-ascend",
     "kernel-cloudnative",
     "kernel-docs",
@@ -808,6 +807,7 @@
     "hpc",
     "hygon-kernel",
     "intel-kernel",
+    "kernel",
     "lerobot_ros2",
     "libarchive-rust",
     "llm_solution",
@@ -1005,6 +1005,10 @@
     "expert-kit": {
       "category": "branch_delete",
       "message": "Cannot delete 'case/dsv3)' (current default branch on destination)"
+    },
+    "kernel": {
+      "category": "push_failed",
+      "message": "fatal: the remote end hung up unexpectedly"
     }
   },
   "diagnoses": {
@@ -1222,6 +1226,12 @@
       "Source: accessible",
       "Destination: exists",
       "Cached: not found (download may have failed)"
+    ],
+    "kernel": [
+      "Source: API returned HTTP 400",
+      "Destination: Repo is very large (2585MB) — may have timed out",
+      "Cached: local copy exists",
+      "Cached: valid git repo"
     ]
   },
   "workflows": {
@@ -1240,10 +1250,10 @@
       "skipped": 0
     },
     "large-repo-mirror": {
-      "timestamp": "2026-06-08T06:28:05Z",
+      "timestamp": "2026-06-09T05:51:05Z",
       "total": 5,
-      "success": 5,
-      "failed": 0,
+      "success": 4,
+      "failed": 1,
       "skipped": 0
     },
     "high": {
