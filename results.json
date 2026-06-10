@@ -1,12 +1,12 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-10T06:06:37Z",
-  "total": 821,
-  "success": 775,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-10T06:42:33Z",
+  "total": 823,
+  "success": 779,
   "skipped": 0,
-  "failed": 46,
+  "failed": 44,
   "success_list": [
     "A-FOT",
     "A-Ops",
@@ -44,6 +44,7 @@
     "DDE-GoCode",
     "DevStore",
     "DiffSynth-Engine",
+    "DyscheOS-kernel",
     "DyscheOS-meta",
     "DyscheOS-utils",
     "EulerCopilot",
@@ -605,6 +606,7 @@
     "resaware_nri_plugins",
     "rhostname",
     "rockchip",
+    "rockchip-kernel",
     "rocketmq-operator",
     "rootfs-maker",
     "ros",
@@ -709,6 +711,7 @@
     "umdk",
     "unizip",
     "uos-dovecot-exporter",
+    "uos-exporter",
     "uos-iptables-exporter",
     "uos-libvirtd-exporter",
     "uos-mgmt-exporter",
@@ -746,6 +749,7 @@
     "witty",
     "witty-diagnosis-agent",
     "witty-framework",
+    "witty-insight",
     "witty-opencode",
     "witty-opentunex",
     "witty-profiler",
@@ -787,7 +791,6 @@
   "failed_list": [
     "A-SysArmor",
     "BiShengCLanguage",
-    "DyscheOS-kernel",
     "OSPerformance",
     "PilotGo-plugins",
     "arkui-linux",
@@ -820,7 +823,6 @@
     "opensource-intern",
     "presentations",
     "riscv-kernel",
-    "rockchip-kernel",
     "skills",
     "sra_test",
     "sysmaster",
@@ -872,7 +874,7 @@
     },
     "BiShengCLanguage": {
       "category": "large_file",
-      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang-cpp.so.12 is 98.37 MB, exceeds GitHub 100 MB limit"
+      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang.so.12 is 69.71 MB, exceeds GitHub 100 MB limit"
     },
     "zvm": {
       "category": "large_file",
@@ -904,7 +906,7 @@
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
+      "message": "hi-sle/images/solder.gif is 69.93 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -932,7 +934,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
+      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -1009,14 +1011,6 @@
     "kernel": {
       "category": "push_failed",
       "message": "fatal: the remote end hung up unexpectedly"
-    },
-    "DyscheOS-kernel": {
-      "category": "clone_failed",
-      "message": "Failed to clone from source (network/auth/availability issue)"
-    },
-    "rockchip-kernel": {
-      "category": "clone_failed",
-      "message": "Failed to clone from source (network/auth/availability issue)"
     }
   },
   "diagnoses": {
@@ -1240,16 +1234,6 @@
       "Destination: Repo is very large (2585MB) — may have timed out",
       "Cached: local copy exists",
       "Cached: valid git repo"
-    ],
-    "DyscheOS-kernel": [
-      "Source: accessible",
-      "Destination: Repo is very large (1633MB) — may have timed out",
-      "Cached: not found (download may have failed)"
-    ],
-    "rockchip-kernel": [
-      "Source: accessible",
-      "Destination: Repo is very large (2562MB) — may have timed out",
-      "Cached: not found (download may have failed)"
     ]
   },
   "workflows": {
@@ -1261,10 +1245,10 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-09T06:39:16Z",
-      "total": 816,
-      "success": 771,
-      "failed": 45,
+      "timestamp": "2026-06-10T06:42:33Z",
+      "total": 818,
+      "success": 775,
+      "failed": 43,
       "skipped": 0
     },
     "large-repo-mirror": {
