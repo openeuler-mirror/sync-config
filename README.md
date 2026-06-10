@@ -5,13 +5,13 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-09T06:39:16Z
+**Last updated:** 2026-06-10T06:42:33Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
-**Status:** ⚠️ **46 repo(s) failed**
+**Status:** ⚠️ **44 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 821 | 775 | 46 | 0 |
+| 823 | 779 | 44 | 0 |
 
 ### 📊 Failure Summary
 
@@ -20,17 +20,15 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 | 🔵 File Too Large (>100MB) | 18 |
 | 🚫 Branch Delete Refused | 7 |
 | ❓ Source Repo Not Found | 6 |
-| 📥 Clone Failed | 5 |
 | 🛡️ Push Protection Blocked | 5 |
 | 📤 Push Rejected | 5 |
+| 📥 Clone Failed | 3 |
 
 ### ❌ Failed Repos
 
 - **`A-SysArmor`** — Nodlink/test-data/SimulatedWS12.zip is 82.66 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`BiShengCLanguage`** — toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang-cpp.so.12 is 98.37 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`DyscheOS-kernel`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (1633MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+- **`BiShengCLanguage`** — toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang.so.12 is 69.71 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`OSPerformance`** — src/libreoffice.zip is 136.87 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -62,7 +60,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`hotpatch_meta`** — Cannot delete 'hotpatch_openEuler-22.03-LTS-SP1_kernel_5.10.0-136.36.0.112_1)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hpc`** — BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hpc`** — ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`hygon-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2606MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
@@ -96,8 +94,6 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`riscv-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`rockchip-kernel`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2562MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
-
 - **`skills`** — Blocked by GitHub push protection (secret/key leaked in history)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`sra_test`** — indexes/hnsw/sift.faiss.xz is 156.96 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
@@ -114,14 +110,14 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`witty-ub`** — Cannot delete 'copy-log)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`yocto-embedded-tools`** — ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`yocto-embedded-tools`** — hi-sle/images/solder.gif is 69.93 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`zvm`** — zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (775)</b></summary>
+<summary><b>✅ Synced Repos (779)</b></summary>
 
 - `A-FOT`
 - `A-Ops`
@@ -159,6 +155,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `DDE-GoCode`
 - `DevStore`
 - `DiffSynth-Engine`
+- `DyscheOS-kernel`
 - `DyscheOS-meta`
 - `DyscheOS-utils`
 - `EulerCopilot`
@@ -322,8 +319,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `clyde`
 - `community`
 - `community-issue`
-- `compass-ci`
-- ... and 575 more
+- ... and 579 more
 
 </details>
 
