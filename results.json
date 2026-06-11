@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-11T06:17:53Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-11T06:56:59Z",
   "total": 823,
   "success": 779,
   "skipped": 0,
@@ -874,7 +874,7 @@
     },
     "BiShengCLanguage": {
       "category": "large_file",
-      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang.so.12 is 69.71 MB, exceeds GitHub 100 MB limit"
+      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang-cpp.so.12 is 98.37 MB, exceeds GitHub 100 MB limit"
     },
     "zvm": {
       "category": "large_file",
@@ -906,7 +906,7 @@
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "hi-sle/images/solder.gif is 69.93 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends_humble/slam-toolbox/2.6.3-1.tar.gz is 51.23 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -942,7 +942,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk25/OpenJDK25U-jdk_x64_linux_hotspot_25.0.1_8.tar.gz is 134.21 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -1245,7 +1245,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-10T06:42:33Z",
+      "timestamp": "2026-06-11T06:56:59Z",
       "total": 818,
       "success": 775,
       "failed": 43,
