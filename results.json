@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-12T06:15:10Z",
-  "total": 823,
-  "success": 779,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-12T07:07:08Z",
+  "total": 824,
+  "success": 780,
   "skipped": 0,
   "failed": 44,
   "success_list": [
@@ -624,6 +624,7 @@
     "scf-security",
     "sdma-dk",
     "sds_doc",
+    "sec-select",
     "secDetector",
     "secGear",
     "seccom-tee",
@@ -878,7 +879,7 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -906,7 +907,7 @@
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends_humble/slam-toolbox/2.6.3-1.tar.gz is 51.23 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -934,7 +935,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
+      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -942,7 +943,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk25/OpenJDK25U-jdk_x64_linux_hotspot_25.0.1_8.tar.gz is 134.21 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -1106,7 +1107,7 @@
     ],
     "intel-kernel": [
       "Source: accessible",
-      "Destination: Repo is very large (2657MB) — may have timed out",
+      "Destination: Repo is very large (2658MB) — may have timed out",
       "Cached: not found (download may have failed)"
     ],
     "lerobot_ros2": [
@@ -1245,9 +1246,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-11T06:56:59Z",
-      "total": 818,
-      "success": 775,
+      "timestamp": "2026-06-12T07:07:08Z",
+      "total": 819,
+      "success": 776,
       "failed": 43,
       "skipped": 0
     },
