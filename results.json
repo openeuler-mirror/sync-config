@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-13T06:06:52Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-13T06:58:19Z",
   "total": 824,
   "success": 780,
   "skipped": 0,
@@ -879,7 +879,7 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -907,7 +907,7 @@
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
+      "message": "hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -935,7 +935,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
+      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -943,7 +943,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk25/OpenJDK25U-jdk_x64_linux_hotspot_25.0.1_8.tar.gz is 134.21 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -1246,7 +1246,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-12T07:07:08Z",
+      "timestamp": "2026-06-13T06:58:19Z",
       "total": 819,
       "success": 776,
       "failed": 43,
