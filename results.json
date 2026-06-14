@@ -2,11 +2,11 @@
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
   "workflow": "high",
-  "timestamp": "2026-06-14T10:25:00Z",
+  "timestamp": "2026-06-14T12:59:11Z",
   "total": 824,
-  "success": 780,
+  "success": 779,
   "skipped": 0,
-  "failed": 44,
+  "failed": 45,
   "success_list": [
     "A-FOT",
     "A-Ops",
@@ -662,7 +662,6 @@
     "sssnic-driver",
     "storprototrace",
     "stortrace",
-    "stratovirt",
     "summer2022",
     "sw-committee",
     "sync-bot",
@@ -826,6 +825,7 @@
     "riscv-kernel",
     "skills",
     "sra_test",
+    "stratovirt",
     "sysmaster",
     "trivy",
     "ubs-io",
@@ -1012,6 +1012,10 @@
     "kernel": {
       "category": "push_failed",
       "message": "fatal: the remote end hung up unexpectedly"
+    },
+    "stratovirt": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     }
   },
   "diagnoses": {
@@ -1235,6 +1239,11 @@
       "Destination: Repo is very large (2585MB) — may have timed out",
       "Cached: local copy exists",
       "Cached: valid git repo"
+    ],
+    "stratovirt": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
     ]
   },
   "workflows": {
@@ -1260,10 +1269,10 @@
       "skipped": 0
     },
     "high": {
-      "timestamp": "2026-06-14T10:25:00Z",
+      "timestamp": "2026-06-14T12:59:11Z",
       "total": 1,
-      "success": 1,
-      "failed": 0,
+      "success": 0,
+      "failed": 1,
       "skipped": 0
     }
   }
