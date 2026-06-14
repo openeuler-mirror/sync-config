@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-14T06:17:43Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-14T07:06:49Z",
   "total": 824,
   "success": 780,
   "skipped": 0,
@@ -907,7 +907,7 @@
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -935,7 +935,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
+      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -987,7 +987,7 @@
     },
     "sra_test": {
       "category": "large_file",
-      "message": "indexes/hnsw/sift.faiss.xz is 156.96 MB, exceeds GitHub 100 MB limit"
+      "message": "indexes/kbest/sift.kbest.xz is 159.86 MB, exceeds GitHub 100 MB limit"
     },
     "A-SysArmor": {
       "category": "large_file",
@@ -1246,7 +1246,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-13T06:58:19Z",
+      "timestamp": "2026-06-14T07:06:49Z",
       "total": 819,
       "success": 776,
       "failed": 43,
