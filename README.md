@@ -5,13 +5,13 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-17T07:39:23Z
+**Last updated:** 2026-06-18T07:18:16Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **44 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 824 | 780 | 44 | 0 |
+| 825 | 781 | 44 | 0 |
 
 ### 📊 Failure Summary
 
@@ -21,8 +21,8 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 | 🚫 Branch Delete Refused | 7 |
 | ❓ Source Repo Not Found | 6 |
 | 🛡️ Push Protection Blocked | 5 |
-| 📤 Push Rejected | 5 |
-| 📥 Clone Failed | 3 |
+| 📤 Push Rejected | 4 |
+| 📥 Clone Failed | 4 |
 
 ### ❌ Failed Repos
 
@@ -60,13 +60,13 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`hotpatch_meta`** — Cannot delete 'hotpatch_openEuler-22.03-LTS-SP1_kernel_5.10.0-136.36.0.112_1)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hpc`** — ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hpc`** — src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`hygon-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2606MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
 - **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2659MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
-- **`kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (2585MB) — may have timed out<br>🔍 Cached: local copy exists<br>🔍 Cached: valid git repo
+- **`kernel`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (2585MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
 - **`lerobot_ros2`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -96,7 +96,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`skills`** — Blocked by GitHub push protection (secret/key leaked in history)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`sra_test`** — indexes/hnsw/sift.faiss.xz is 156.96 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`sra_test`** — indexes/kbest/sift.kbest.xz is 159.86 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`sysmaster`** — Cannot delete 'auto-5324761-master-af4e488f)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -110,14 +110,14 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`witty-ub`** — Cannot delete 'copy-log)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`yocto-embedded-tools`** — hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`yocto-embedded-tools`** — ros_depends/suitesparse/SuiteSparse-5.4.0.tar.gz is 50.16 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`zvm`** — zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (780)</b></summary>
+<summary><b>✅ Synced Repos (781)</b></summary>
 
 - `A-FOT`
 - `A-Ops`
@@ -319,7 +319,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `clyde`
 - `community`
 - `community-issue`
-- ... and 580 more
+- ... and 581 more
 
 </details>
 
