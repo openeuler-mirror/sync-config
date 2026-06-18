@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "high",
-  "timestamp": "2026-06-18T05:55:18Z",
+  "workflow": "large-repo-mirror",
+  "timestamp": "2026-06-18T05:58:25Z",
   "total": 824,
   "success": 780,
   "skipped": 0,
@@ -1010,8 +1010,8 @@
       "message": "Cannot delete 'case/dsv3)' (current default branch on destination)"
     },
     "kernel": {
-      "category": "push_failed",
-      "message": "fatal: the remote end hung up unexpectedly"
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     }
   },
   "diagnoses": {
@@ -1233,8 +1233,7 @@
     "kernel": [
       "Source: API returned HTTP 400",
       "Destination: Repo is very large (2585MB) — may have timed out",
-      "Cached: local copy exists",
-      "Cached: valid git repo"
+      "Cached: not found (download may have failed)"
     ]
   },
   "workflows": {
@@ -1253,7 +1252,7 @@
       "skipped": 0
     },
     "large-repo-mirror": {
-      "timestamp": "2026-06-17T06:49:49Z",
+      "timestamp": "2026-06-18T05:58:25Z",
       "total": 5,
       "success": 4,
       "failed": 1,
