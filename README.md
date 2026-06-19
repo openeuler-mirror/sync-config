@@ -5,24 +5,24 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-18T07:18:16Z
+**Last updated:** 2026-06-19T07:44:29Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
-**Status:** ⚠️ **44 repo(s) failed**
+**Status:** ⚠️ **40 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 825 | 781 | 44 | 0 |
+| 825 | 785 | 40 | 0 |
 
 ### 📊 Failure Summary
 
 | Category | Count |
 |----------|------:|
-| 🔵 File Too Large (>100MB) | 18 |
+| 🔵 File Too Large (>100MB) | 21 |
 | 🚫 Branch Delete Refused | 7 |
-| ❓ Source Repo Not Found | 6 |
 | 🛡️ Push Protection Blocked | 5 |
-| 📤 Push Rejected | 4 |
-| 📥 Clone Failed | 4 |
+| 📤 Push Rejected | 5 |
+| 🔒 Pre-receive Hook Declined | 1 |
+| 📥 Clone Failed | 1 |
 
 ### ❌ Failed Repos
 
@@ -33,8 +33,6 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - **`OSPerformance`** — src/libreoffice.zip is 136.87 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`PilotGo-plugins`** — Blocked by GitHub push protection (secret/key leaked in history)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`arkui-linux`** — Source repository not found or has been deleted<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`bigtop-manager`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -52,8 +50,6 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`expert-kit`** — Cannot delete 'case/dsv3)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`ft_engine`** — Source repository not found or has been deleted<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
 - **`gala-docs`** — deploy/middleware_archive/kafka_2.13-2.8.2.tgz is 68.29 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`global-trust-authority`** — vendor.tar.gz is 104.42 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
@@ -64,11 +60,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`hygon-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2606MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
-- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2659MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2660MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
-- **`kernel`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (2585MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+- **`kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (2585MB) — may have timed out<br>🔍 Cached: bare mirror exists<br>🔍 Cached: valid bare git repo
 
-- **`lerobot_ros2`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`lerobot_ros2`** — Rejected by destination server pre-receive hook<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`libarchive-rust`** — 打包示例及结果/libarchive-rust.tar is 190.40 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -78,11 +74,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`migration-tools`** — agent-requires/requires/aarch64/migration-tools-agent-1.0.1-1.el7.noarch.rpm is 206.45 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`mugen`** — Source repository not found or has been deleted<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`mugen`** — testcases/cli-test/aqute-bnd/common/data.tar.gz is 90.36 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`nestos-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`oee_archive`** — Source repository not found or has been deleted<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`oee_archive`** — isula-oe-23.09-image/isula-oe-23.09-image.tar.gz is 70.58 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
 
@@ -90,34 +86,30 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`opensource-intern`** — BFPL叁/01.部署教程/serving/resources/mount/serving-service.jar is 193.43 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (1084MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
-- **`presentations`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`presentations`** — openEuler Summit 2024/poster 模版.pptx is 109.94 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`riscv-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`skills`** — Blocked by GitHub push protection (secret/key leaked in history)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`sra_test`** — indexes/kbest/sift.kbest.xz is 159.86 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`sra_test`** — indexes/hnsw/sift.faiss.xz is 156.96 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`sysmaster`** — Cannot delete 'auto-5324761-master-af4e488f)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`trivy`** — cmd/trivy/trivy_new is 177.30 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`ubs-io`** — Source repository not found or has been deleted<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
 - **`virtCCA_sdk`** — Blocked by GitHub push protection (secret/key leaked in history)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`witty-ops-cases`** — Source repository not found or has been deleted<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`witty-ub`** — Cannot delete 'copy-log)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`yocto-embedded-tools`** — ros_depends/suitesparse/SuiteSparse-5.4.0.tar.gz is 50.16 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`yocto-embedded-tools`** — hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`zvm`** — zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`zvm`** — zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (781)</b></summary>
+<summary><b>✅ Synced Repos (785)</b></summary>
 
 - `A-FOT`
 - `A-Ops`
@@ -271,6 +263,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `aops-vulcanus`
 - `aops-zeus`
 - `api-guarder`
+- `arkui-linux`
 - `arm`
 - `astream`
 - `async-libfuse`
@@ -318,8 +311,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `cloudphone_kernel`
 - `clyde`
 - `community`
-- `community-issue`
-- ... and 581 more
+- ... and 585 more
 
 </details>
 
