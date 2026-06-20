@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-20T06:00:28Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-20T07:07:44Z",
   "total": 825,
   "success": 785,
   "skipped": 0,
@@ -872,7 +872,7 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -892,11 +892,11 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/aqute-bnd/common/data.tar.gz is 90.36 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/squashfs-tools/common/initrd.img is 68.38 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/suitesparse/SuiteSparse-5.4.0.tar.gz is 50.16 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -920,7 +920,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
+      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -928,7 +928,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk25/OpenJDK25U-jdk_x64_linux_hotspot_25.0.1_8.tar.gz is 134.21 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -956,7 +956,7 @@
     },
     "oee_archive": {
       "category": "large_file",
-      "message": "isula-oe-23.09-image/isula-oe-23.09-image.tar.gz is 70.58 MB, exceeds GitHub 100 MB limit"
+      "message": "rust/rustc-1.76.0-x86_64-unknown-linux-gnu.tar.xz is 62.25 MB, exceeds GitHub 100 MB limit"
     },
     "bigtop-manager": {
       "category": "branch_delete",
@@ -1211,7 +1211,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-19T07:44:29Z",
+      "timestamp": "2026-06-20T07:07:44Z",
       "total": 820,
       "success": 781,
       "failed": 39,
