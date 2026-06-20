@@ -5,7 +5,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-19T07:44:29Z
+**Last updated:** 2026-06-20T07:07:44Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **40 repo(s) failed**
 
@@ -36,7 +36,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`bigtop-manager`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`bishengjdk-build`** — bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`bishengjdk-build`** — bootjdk/jdk25/OpenJDK25U-jdk_x64_linux_hotspot_25.0.1_8.tar.gz is 134.21 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`btfhub`** — Cannot delete 'feature/init)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -56,7 +56,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`hotpatch_meta`** — Cannot delete 'hotpatch_openEuler-22.03-LTS-SP1_kernel_5.10.0-136.36.0.112_1)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hpc`** — src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hpc`** — ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`hygon-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2606MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
@@ -74,11 +74,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`migration-tools`** — agent-requires/requires/aarch64/migration-tools-agent-1.0.1-1.el7.noarch.rpm is 206.45 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`mugen`** — testcases/cli-test/aqute-bnd/common/data.tar.gz is 90.36 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`mugen`** — testcases/cli-test/squashfs-tools/common/initrd.img is 68.38 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`nestos-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`oee_archive`** — isula-oe-23.09-image/isula-oe-23.09-image.tar.gz is 70.58 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`oee_archive`** — rust/rustc-1.76.0-x86_64-unknown-linux-gnu.tar.xz is 62.25 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
 
@@ -102,9 +102,9 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`witty-ub`** — Cannot delete 'copy-log)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`yocto-embedded-tools`** — hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`yocto-embedded-tools`** — ros_depends/suitesparse/SuiteSparse-5.4.0.tar.gz is 50.16 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`zvm`** — zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`zvm`** — zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
