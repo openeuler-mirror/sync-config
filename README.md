@@ -5,13 +5,13 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-22T08:14:16Z
+**Last updated:** 2026-06-23T06:47:48Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **40 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 827 | 787 | 40 | 0 |
+| 828 | 788 | 40 | 0 |
 
 ### 📊 Failure Summary
 
@@ -50,7 +50,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`expert-kit`** — Cannot delete 'case/dsv3)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`gala-docs`** — theme/public/videos/5.A-Ops_deploy_tools.webm is 51.12 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`gala-docs`** — deploy/middleware_archive/kafka_2.13-2.8.2.tgz is 68.29 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`global-trust-authority`** — vendor.tar.gz is 104.42 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -66,7 +66,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`lerobot_ros2`** — Rejected by destination server pre-receive hook<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`libarchive-rust`** — 打包示例及结果/libarchive-rust.tar is 190.40 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`libarchive-rust`** — 打包示例及结果/libarchive-rust.cpio is 226.67 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`llm_solution`** — Blocked by GitHub push protection (secret/key leaked in history)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -102,14 +102,14 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`witty-ub`** — Cannot delete 'copy-log)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`yocto-embedded-tools`** — hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`yocto-embedded-tools`** — ros_depends/slam-toolbox/2.1.1-1.tar.gz is 51.22 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`zvm`** — zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`zvm`** — zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (787)</b></summary>
+<summary><b>✅ Synced Repos (788)</b></summary>
 
 - `A-FOT`
 - `A-Ops`
@@ -311,7 +311,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `cloudphone_kernel`
 - `clyde`
 - `community`
-- ... and 587 more
+- ... and 588 more
 
 </details>
 
