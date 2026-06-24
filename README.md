@@ -5,7 +5,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-23T06:47:48Z
+**Last updated:** 2026-06-24T06:59:28Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **40 repo(s) failed**
 
@@ -66,7 +66,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`lerobot_ros2`** — Rejected by destination server pre-receive hook<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`libarchive-rust`** — 打包示例及结果/libarchive-rust.cpio is 226.67 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`libarchive-rust`** — 打包示例及结果/libarchive-rust.tar is 190.40 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`llm_solution`** — Blocked by GitHub push protection (secret/key leaked in history)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -74,7 +74,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`migration-tools`** — agent-requires/requires/aarch64/migration-tools-agent-1.0.1-1.el7.noarch.rpm is 206.45 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`mugen`** — testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`mugen`** — testcases/cli-test/squashfs-tools/common/initrd.img is 68.38 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`nestos-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -102,7 +102,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`witty-ub`** — Cannot delete 'copy-log)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`yocto-embedded-tools`** — ros_depends/slam-toolbox/2.1.1-1.tar.gz is 51.22 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`yocto-embedded-tools`** — ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`zvm`** — zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
