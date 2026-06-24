@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-24T06:02:22Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-24T06:59:28Z",
   "total": 828,
   "success": 788,
   "skipped": 0,
@@ -879,7 +879,7 @@
     },
     "libarchive-rust": {
       "category": "large_file",
-      "message": "打包示例及结果/libarchive-rust.cpio is 226.67 MB, exceeds GitHub 100 MB limit"
+      "message": "打包示例及结果/libarchive-rust.tar is 190.40 MB, exceeds GitHub 100 MB limit"
     },
     "nestos-kernel": {
       "category": "push_failed",
@@ -895,11 +895,11 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/squashfs-tools/common/initrd.img is 68.38 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/slam-toolbox/2.1.1-1.tar.gz is 51.22 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -1214,7 +1214,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-23T06:47:48Z",
+      "timestamp": "2026-06-24T06:59:28Z",
       "total": 823,
       "success": 784,
       "failed": 39,
