@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-27T05:48:28Z",
-  "total": 828,
-  "success": 788,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-27T06:41:13Z",
+  "total": 829,
+  "success": 789,
   "skipped": 0,
   "failed": 40,
   "success_list": [
@@ -743,6 +743,7 @@
     "vectorBlas",
     "velox",
     "virtCCA_driver",
+    "vla-factory",
     "vmtop",
     "vs2qt",
     "vtopia-agent",
@@ -895,15 +896,15 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/rubygem-fluentd/common/data.tar.gz is 93.83 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends_humble/slam-toolbox/2.6.3-1.tar.gz is 51.23 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/suitesparse/SuiteSparse-5.4.0.tar.gz is 50.16 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
-      "message": "docs/zh/contribute/public_sys_resources/docmate_check.gif is 91.37 MB, exceeds GitHub 100 MB limit"
+      "message": "docs/zh/contribute/public_sys_resources/docmate_rewrite.gif is 80.37 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler": {
       "category": "clone_failed",
@@ -923,7 +924,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
+      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -1214,9 +1215,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-26T06:33:59Z",
-      "total": 823,
-      "success": 784,
+      "timestamp": "2026-06-27T06:41:13Z",
+      "total": 824,
+      "success": 785,
       "failed": 39,
       "skipped": 0
     },
