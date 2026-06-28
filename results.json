@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-28T06:07:58Z",
-  "total": 829,
-  "success": 789,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-28T07:12:35Z",
+  "total": 830,
+  "success": 790,
   "skipped": 0,
   "failed": 40,
   "success_list": [
@@ -691,6 +691,7 @@
     "tp-qemu",
     "triton-cpu",
     "trucker",
+    "trustruntime",
     "txgbe-driver",
     "uadk",
     "uadk-bigdata",
@@ -876,7 +877,7 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -896,11 +897,11 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/rubygem-fluentd/common/data.tar.gz is 93.83 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/samtools/common/fstnamesort.bam is 98.38 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/suitesparse/SuiteSparse-5.4.0.tar.gz is 50.16 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -924,7 +925,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
+      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -932,7 +933,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk25/OpenJDK25U-jdk_x64_linux_hotspot_25.0.1_8.tar.gz is 134.21 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -960,7 +961,7 @@
     },
     "oee_archive": {
       "category": "large_file",
-      "message": "isula-oe-23.09-image/isula-oe-23.09-image.tar.gz is 70.58 MB, exceeds GitHub 100 MB limit"
+      "message": "rust/rustc-1.76.0-x86_64-unknown-linux-gnu.tar.xz is 62.25 MB, exceeds GitHub 100 MB limit"
     },
     "bigtop-manager": {
       "category": "branch_delete",
@@ -1215,9 +1216,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-27T06:41:13Z",
-      "total": 824,
-      "success": 785,
+      "timestamp": "2026-06-28T07:12:35Z",
+      "total": 825,
+      "success": 786,
       "failed": 39,
       "skipped": 0
     },
