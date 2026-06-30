@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-06-30T05:57:28Z",
-  "total": 831,
-  "success": 791,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-06-30T06:43:58Z",
+  "total": 832,
+  "success": 792,
   "skipped": 0,
   "failed": 40,
   "success_list": [
@@ -624,6 +624,7 @@
     "sbom-tools",
     "sbom-website",
     "scf-security",
+    "scx-supervisor",
     "sdma-dk",
     "sds_doc",
     "sec-select",
@@ -898,15 +899,15 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/meson/common/0.63/test_1.tgz is 55.26 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends_humble/slam-toolbox/2.6.3-1.tar.gz is 51.23 MB, exceeds GitHub 100 MB limit"
+      "message": "hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
-      "message": "docs/zh/contribute/public_sys_resources/docmate_improve.gif is 82.91 MB, exceeds GitHub 100 MB limit"
+      "message": "docs/zh/contribute/public_sys_resources/docmate_check.gif is 91.37 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler": {
       "category": "clone_failed",
@@ -1127,7 +1128,7 @@
       "Cached: not found (download may have failed)"
     ],
     "openEuler": [
-      "Source: API returned HTTP 400",
+      "Source: Source repo not found or not accessible with current token",
       "Destination: Source repo not found or not accessible with current token",
       "Cached: not found (download may have failed)"
     ],
@@ -1217,9 +1218,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-29T07:16:43Z",
-      "total": 826,
-      "success": 787,
+      "timestamp": "2026-06-30T06:43:58Z",
+      "total": 827,
+      "success": 788,
       "failed": 39,
       "skipped": 0
     },
