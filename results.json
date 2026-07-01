@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-01T06:13:19Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-01T07:10:37Z",
   "total": 832,
   "success": 792,
   "skipped": 0,
@@ -879,11 +879,11 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
-      "message": "打包示例及结果/libarchive-rust.tar is 190.40 MB, exceeds GitHub 100 MB limit"
+      "message": "打包示例及结果/libarchive-rust.cpio is 226.67 MB, exceeds GitHub 100 MB limit"
     },
     "nestos-kernel": {
       "category": "push_failed",
@@ -903,7 +903,7 @@
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -927,7 +927,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
+      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -935,7 +935,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz is 198.22 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -1009,197 +1009,197 @@
   "diagnoses": {
     "A-SysArmor": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "BiShengCLanguage": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "PilotGo-plugins": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "bigtop-manager": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "bishengjdk-build": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "btfhub": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "docs": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "docs-centralized": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "dpu-utilities": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "euler-copilot-rag": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "expert-kit": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "gala-docs": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "global-trust-authority": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "hotpatch_meta": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "hpc": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "hygon-kernel": [
       "Source: accessible",
-      "Destination: Repo is very large (2606MB) — may have timed out",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "intel-kernel": [
       "Source: accessible",
-      "Destination: Repo is very large (2660MB) — may have timed out",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "lerobot_ros2": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "libarchive-rust": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "llm_solution": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "lzu-icc-nsg": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "migration-tools": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "mugen": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "oee_archive": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "openEuler": [
       "Source: Source repo not found or not accessible with current token",
-      "Destination: Source repo not found or not accessible with current token",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "opendesign-internship": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "opensource-intern": [
       "Source: accessible",
-      "Destination: Repo is very large (1084MB) — may have timed out",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "presentations": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "skills": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "sra_test": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "sysmaster": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "virtCCA_sdk": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "witty-ub": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "yocto-embedded-tools": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "zvm": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "nestos-kernel": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "OSPerformance": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "riscv-kernel": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "trivy": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "kernel": [
@@ -1218,7 +1218,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-06-30T06:43:58Z",
+      "timestamp": "2026-07-01T07:10:37Z",
       "total": 827,
       "success": 788,
       "failed": 39,
