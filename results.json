@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "high",
-  "timestamp": "2026-07-04T04:35:27Z",
+  "workflow": "large-repo-mirror",
+  "timestamp": "2026-07-04T05:27:11Z",
   "total": 833,
   "success": 793,
   "skipped": 0,
@@ -1205,7 +1205,7 @@
     ],
     "kernel": [
       "Source: API returned HTTP 400",
-      "Destination: Repo is very large (2585MB) — may have timed out",
+      "Destination: API rate limit exceeded",
       "Cached: bare mirror exists",
       "Cached: valid bare git repo"
     ]
@@ -1226,7 +1226,7 @@
       "skipped": 0
     },
     "large-repo-mirror": {
-      "timestamp": "2026-07-03T05:22:57Z",
+      "timestamp": "2026-07-04T05:27:11Z",
       "total": 5,
       "success": 4,
       "failed": 1,
