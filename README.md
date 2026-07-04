@@ -5,13 +5,13 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-03T06:28:55Z
+**Last updated:** 2026-07-04T06:22:10Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **40 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 834 | 794 | 40 | 0 |
+| 835 | 795 | 40 | 0 |
 
 ### 📊 Failure Summary
 
@@ -36,11 +36,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`bigtop-manager`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`bishengjdk-build`** — bootjdk/jdk25/OpenJDK25U-jdk_x64_linux_hotspot_25.0.1_8.tar.gz is 134.21 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`bishengjdk-build`** — bootjdk/jdk21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz is 198.22 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
 - **`btfhub`** — Cannot delete 'feature/init)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`docs`** — docs/zh/contribute/public_sys_resources/docmate_rewrite.gif is 80.37 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`docs`** — docs/zh/contribute/public_sys_resources/docmate_improve.gif is 82.91 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
 - **`docs-centralized`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
@@ -50,7 +50,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`expert-kit`** — Cannot delete 'case/dsv3)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`gala-docs`** — deploy/middleware_archive/kafka_2.13-2.8.2.tgz is 68.29 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`gala-docs`** — theme/public/videos/5.A-Ops_deploy_tools.webm is 51.12 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
 - **`global-trust-authority`** — vendor.tar.gz is 104.42 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
@@ -74,11 +74,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`migration-tools`** — agent-requires/requires/aarch64/migration-tools-agent-1.0.1-1.el7.noarch.rpm is 206.45 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`mugen`** — testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`mugen`** — testcases/cli-test/samtools/common/fst.bam is 91.64 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
 - **`nestos-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`oee_archive`** — isula-oe-23.09-image/isula-oe-23.09-image.tar.gz is 70.58 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`oee_archive`** — rust/rustc-1.76.0-x86_64-unknown-linux-gnu.tar.xz is 62.25 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
@@ -109,7 +109,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (794)</b></summary>
+<summary><b>✅ Synced Repos (795)</b></summary>
 
 - `A-FOT`
 - `A-Ops`
@@ -122,6 +122,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `AIHost-turbo`
 - `ANNC`
 - `AcTrail`
+- `AgentBoost`
 - `AgentSecurity`
 - `Agith`
 - `AppAPIChecker`
@@ -310,8 +311,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `cloudnative`
 - `cloudnative-docs`
 - `cloudphone_kernel`
-- `clyde`
-- ... and 594 more
+- ... and 595 more
 
 </details>
 
