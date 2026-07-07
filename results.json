@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-07T05:41:44Z",
-  "total": 835,
-  "success": 795,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-07T06:48:00Z",
+  "total": 836,
+  "success": 796,
   "skipped": 0,
   "failed": 40,
   "success_list": [
@@ -760,6 +760,7 @@
     "wine-app",
     "wisdom-advisor",
     "witty",
+    "witty-compat",
     "witty-diagnosis-agent",
     "witty-framework",
     "witty-insight",
@@ -878,7 +879,7 @@
     },
     "BiShengCLanguage": {
       "category": "large_file",
-      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang-cpp.so.12 is 98.37 MB, exceeds GitHub 100 MB limit"
+      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang.so.12 is 69.71 MB, exceeds GitHub 100 MB limit"
     },
     "zvm": {
       "category": "large_file",
@@ -902,11 +903,11 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/aqute-bnd/common/data.tar.gz is 90.36 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/squashfs-tools/common/initrd.img is 68.38 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/slam-toolbox/2.1.1-1.tar.gz is 51.22 MB, exceeds GitHub 100 MB limit"
+      "message": "hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -930,7 +931,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
+      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -950,7 +951,7 @@
     },
     "gala-docs": {
       "category": "large_file",
-      "message": "deploy/middleware_archive/kafka_2.13-2.8.2.tgz is 68.29 MB, exceeds GitHub 100 MB limit"
+      "message": "theme/public/videos/5.A-Ops_deploy_tools.webm is 51.12 MB, exceeds GitHub 100 MB limit"
     },
     "lzu-icc-nsg": {
       "category": "large_file",
@@ -1221,9 +1222,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-06T06:45:39Z",
-      "total": 830,
-      "success": 791,
+      "timestamp": "2026-07-07T06:48:00Z",
+      "total": 831,
+      "success": 792,
       "failed": 39,
       "skipped": 0
     },
