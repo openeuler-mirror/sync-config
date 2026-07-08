@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-08T04:57:28Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-08T06:14:59Z",
   "total": 836,
   "success": 796,
   "skipped": 0,
@@ -883,7 +883,7 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -903,15 +903,15 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/squashfs-tools/common/initrd.img is 68.38 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/meson/common/0.63/test_1.tgz is 55.26 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
-      "message": "docs/zh/contribute/public_sys_resources/docmate_check.gif is 91.37 MB, exceeds GitHub 100 MB limit"
+      "message": "docs/zh/contribute/public_sys_resources/docmate_improve.gif is 82.91 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler": {
       "category": "clone_failed",
@@ -967,7 +967,7 @@
     },
     "oee_archive": {
       "category": "large_file",
-      "message": "rust/rustc-1.76.0-x86_64-unknown-linux-gnu.tar.xz is 62.25 MB, exceeds GitHub 100 MB limit"
+      "message": "isula-oe-23.09-image/isula-oe-23.09-image.tar.gz is 70.58 MB, exceeds GitHub 100 MB limit"
     },
     "bigtop-manager": {
       "category": "branch_delete",
@@ -1222,7 +1222,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-07T06:48:00Z",
+      "timestamp": "2026-07-08T06:14:59Z",
       "total": 831,
       "success": 792,
       "failed": 39,
