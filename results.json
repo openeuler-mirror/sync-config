@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-09T05:46:40Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-09T06:55:38Z",
   "total": 836,
   "success": 796,
   "skipped": 0,
@@ -879,11 +879,11 @@
     },
     "BiShengCLanguage": {
       "category": "large_file",
-      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang.so.12 is 69.71 MB, exceeds GitHub 100 MB limit"
+      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang-cpp.so.12 is 98.37 MB, exceeds GitHub 100 MB limit"
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -903,7 +903,7 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/meson/common/0.63/test_1.tgz is 55.26 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/apache-commons-daemon/common/arm/apache-commons-daemon.zip is 70.88 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
@@ -911,7 +911,7 @@
     },
     "docs": {
       "category": "large_file",
-      "message": "docs/zh/contribute/public_sys_resources/docmate_improve.gif is 82.91 MB, exceeds GitHub 100 MB limit"
+      "message": "docs/zh/contribute/public_sys_resources/docmate_rewrite.gif is 80.37 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler": {
       "category": "clone_failed",
@@ -931,7 +931,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
+      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -951,7 +951,7 @@
     },
     "gala-docs": {
       "category": "large_file",
-      "message": "theme/public/videos/5.A-Ops_deploy_tools.webm is 51.12 MB, exceeds GitHub 100 MB limit"
+      "message": "deploy/middleware_archive/kafka_2.13-2.8.2.tgz is 68.29 MB, exceeds GitHub 100 MB limit"
     },
     "lzu-icc-nsg": {
       "category": "large_file",
@@ -1222,7 +1222,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-08T06:14:59Z",
+      "timestamp": "2026-07-09T06:55:38Z",
       "total": 831,
       "success": 792,
       "failed": 39,
