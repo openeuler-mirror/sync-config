@@ -5,7 +5,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-13T06:18:03Z
+**Last updated:** 2026-07-14T05:37:14Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **40 repo(s) failed**
 
@@ -56,11 +56,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`hotpatch_meta`** — Cannot delete 'hotpatch_openEuler-22.03-LTS-SP1_kernel_5.10.0-136.36.0.112_1)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hpc`** — src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hpc`** — ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`hygon-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2606MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
-- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2663MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2664MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
 - **`kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (2585MB) — may have timed out<br>🔍 Cached: bare mirror exists<br>🔍 Cached: valid bare git repo
 
@@ -102,7 +102,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`witty-ub`** — Cannot delete 'copy-log)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`yocto-embedded-tools`** — hi-sle/images/solder.gif is 69.93 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`yocto-embedded-tools`** — ros_depends/slam-toolbox/2.1.1-1.tar.gz is 51.22 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`zvm`** — zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
