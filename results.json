@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-14T04:38:29Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-14T05:37:14Z",
   "total": 836,
   "success": 796,
   "skipped": 0,
@@ -907,7 +907,7 @@
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "hi-sle/images/solder.gif is 69.93 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/slam-toolbox/2.1.1-1.tar.gz is 51.22 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -931,7 +931,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
+      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -1093,7 +1093,7 @@
     ],
     "intel-kernel": [
       "Source: accessible",
-      "Destination: Repo is very large (2663MB) — may have timed out",
+      "Destination: Repo is very large (2664MB) — may have timed out",
       "Cached: not found (download may have failed)"
     ],
     "lerobot_ros2": [
@@ -1222,7 +1222,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-13T06:18:03Z",
+      "timestamp": "2026-07-14T05:37:14Z",
       "total": 831,
       "success": 792,
       "failed": 39,
