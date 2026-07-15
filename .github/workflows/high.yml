@@ -75,15 +75,13 @@ jobs:
         MERGE_URL="https://raw.githubusercontent.com/${{ github.repository }}/${BRANCH}/results.json"
 
         for attempt in 1 2 3; do
+          cp results.json _our_results.json
+
           git stash push -- results.json 2>/dev/null || true
           git pull --rebase origin "$BRANCH" || { echo "Pull failed"; git rebase --abort 2>/dev/null; break; }
           git stash pop 2>/dev/null || true
 
-          git checkout --theirs results.json 2>/dev/null || true
-          git reset HEAD results.json 2>/dev/null
-          git checkout -- results.json 2>/dev/null || true
-
-          python _mirror-hub/scripts/merge_results.py results.json \
+          python _mirror-hub/scripts/merge_results.py _our_results.json \
             --merge-url "$MERGE_URL" \
             --output results.json
 
