@@ -16,14 +16,14 @@ jobs:
       contents: write
 
     steps:
+    - name: Checkout sync-config
+      uses: actions/checkout@v4
+
     - name: Checkout community-mirror (scripts)
       uses: actions/checkout@v4
       with:
         repository: huanglei0308/community-mirror
         path: _mirror-hub
-
-    - name: Checkout sync-config
-      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v5
