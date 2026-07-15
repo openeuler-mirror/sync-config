@@ -71,32 +71,35 @@ jobs:
       run: |
         git config user.name 'github-actions[bot]'
         git config user.email 'github-actions[bot]@users.noreply.github.com'
-        git add results.json
-        if git diff --cached --quiet; then
-          echo "No changes to commit"
-          exit 0
-        fi
 
         BRANCH=$(git rev-parse --abbrev-ref HEAD)
         MERGE_URL="https://raw.githubusercontent.com/${{ github.repository }}/${BRANCH}/results.json"
 
         for attempt in 1 2 3; do
-          git commit -m "Update sync results (large-repos) [skip ci]"
+          git stash push -- results.json 2>/dev/null || true
+          git pull --rebase origin "$BRANCH" || { echo "Pull failed"; git rebase --abort 2>/dev/null; break; }
+          git stash pop 2>/dev/null || true
 
-          BEFORE=$(git rev-parse HEAD)
-          git pull --rebase origin "$BRANCH" || { echo "Rebase conflict"; break; }
-          AFTER=$(git rev-parse HEAD)
+          git checkout --theirs results.json 2>/dev/null || true
+          git reset HEAD results.json 2>/dev/null
+          git checkout -- results.json 2>/dev/null || true
 
-          if [ "$BEFORE" = "$AFTER" ]; then
-            break
-          fi
-
-          echo "Remote changed, re-merging with latest results.json..."
           python _mirror-hub/scripts/merge_results.py results.json \
             --merge-url "$MERGE_URL" \
             --output results.json
-          git add results.json
-          git commit --amend --no-edit
-        done
 
-        git push origin "$BRANCH"
+          git add results.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update sync results (large-repos) [skip ci]"
+
+          if git push origin "$BRANCH" 2>&1 | grep -q '[rejected]'; then
+            echo "Push rejected, retrying..."
+            git reset --soft HEAD~1
+          else
+            break
+          fi
+        done
