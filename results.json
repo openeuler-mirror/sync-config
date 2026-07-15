@@ -1,0 +1,16 @@
+{
+  "src": "gitcode/openeuler",
+  "dst": "github/openeuler-mirror",
+  "workflow": "high",
+  "total": 1,
+  "success": 1,
+  "failed": 0,
+  "skipped": 0,
+  "success_list": [
+    "stratovirt"
+  ],
+  "failed_list": [],
+  "skipped_list": [],
+  "errors": {},
+  "timestamp": "2026-07-15T01:12:00Z"
+}
