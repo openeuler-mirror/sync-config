@@ -1,12 +1,12 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "high",
-  "timestamp": "2026-07-16T04:08:43Z",
-  "total": 833,
-  "success": 794,
+  "workflow": "large-repo-mirror",
+  "timestamp": "2026-07-16T04:39:46Z",
+  "total": 838,
+  "success": 798,
   "skipped": 0,
-  "failed": 39,
+  "failed": 40,
   "success_list": [
     "A-FOT",
     "A-Ops",
@@ -595,12 +595,15 @@
     "python-multi_key_dict",
     "pyuadk",
     "qax-gm-certificates",
+    "qemu",
     "qingzhou",
     "qla2xxx",
     "qt6",
     "quick-issue",
     "radiaTest",
+    "raspberrypi",
     "raspberrypi-build",
+    "raspberrypi-kernel",
     "rat",
     "ray-adapter",
     "re2-rust",
@@ -755,6 +758,7 @@
     "wayca-scheduler",
     "wayca-scheduler-bench",
     "website",
+    "website-v2",
     "wine-app",
     "wisdom-advisor",
     "witty",
@@ -822,6 +826,7 @@
     "hpc",
     "hygon-kernel",
     "intel-kernel",
+    "kernel",
     "lerobot_ros2",
     "libarchive-rust",
     "llm_solution",
@@ -1001,6 +1006,10 @@
     "expert-kit": {
       "category": "branch_delete",
       "message": "Cannot delete 'case/dsv3)' (current default branch on destination)"
+    },
+    "kernel": {
+      "category": "push_failed",
+      "message": "fatal: the remote end hung up unexpectedly"
     }
   },
   "diagnoses": {
@@ -1198,6 +1207,12 @@
       "Source: accessible",
       "Destination: exists",
       "Cached: not found (download may have failed)"
+    ],
+    "kernel": [
+      "Source: API returned HTTP 400",
+      "Destination: Repo is very large (2585MB) — may have timed out",
+      "Cached: bare mirror exists",
+      "Cached: valid bare git repo"
     ]
   },
   "workflows": {
@@ -1213,6 +1228,13 @@
       "total": 833,
       "success": 794,
       "failed": 39,
+      "skipped": 0
+    },
+    "large-repo-mirror": {
+      "timestamp": "2026-07-16T04:39:46Z",
+      "total": 838,
+      "success": 798,
+      "failed": 40,
       "skipped": 0
     }
   }
