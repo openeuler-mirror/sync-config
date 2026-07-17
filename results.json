@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-17T04:43:24Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-17T05:43:18Z",
   "total": 839,
   "success": 799,
   "skipped": 0,
@@ -886,7 +886,7 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -902,15 +902,15 @@
     },
     "presentations": {
       "category": "large_file",
-      "message": "openEuler Summit 2024/poster 模版.pptx is 109.94 MB, exceeds GitHub 100 MB limit"
+      "message": "openEuler Summit 2024/openEuler Summit 2024 ppt模板.pptx is 117.59 MB, exceeds GitHub 100 MB limit"
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/samtools/common/fstsorted.bam is 91.64 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends_humble/slam-toolbox/2.6.3-1.tar.gz is 51.23 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -942,7 +942,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz is 198.22 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -1225,7 +1225,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-16T05:43:30Z",
+      "timestamp": "2026-07-17T05:43:18Z",
       "total": 839,
       "success": 799,
       "failed": 40,
