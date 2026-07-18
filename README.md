@@ -5,13 +5,13 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-17T05:43:18Z
+**Last updated:** 2026-07-18T05:22:48Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **40 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 839 | 799 | 40 | 0 |
+| 841 | 801 | 40 | 0 |
 
 📊 [查看详细同步状态（含失败原因诊断）](https://huanglei0308.github.io/community-mirror/community.html?org=openEuler)
 
@@ -40,11 +40,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`bigtop-manager`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`bishengjdk-build`** — bootjdk/jdk21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz is 198.22 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`bishengjdk-build`** — bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`btfhub`** — Cannot delete 'feature/init)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`docs`** — docs/zh/contribute/public_sys_resources/docmate_rewrite.gif is 80.37 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`docs`** — docs/zh/contribute/public_sys_resources/docmate_check.gif is 91.37 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`docs-centralized`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -60,11 +60,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`hotpatch_meta`** — Cannot delete 'hotpatch_openEuler-22.03-LTS-SP1_kernel_5.10.0-136.36.0.112_1)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hpc`** — src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hpc`** — ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`hygon-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2606MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
-- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2664MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2672MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
 - **`kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (2585MB) — may have timed out<br>🔍 Cached: bare mirror exists<br>🔍 Cached: valid bare git repo
 
@@ -78,7 +78,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`migration-tools`** — agent-requires/requires/aarch64/migration-tools-agent-1.0.1-1.el7.noarch.rpm is 206.45 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`mugen`** — testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`mugen`** — testcases/cli-test/meson/common/0.63/test_1.tgz is 55.26 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`nestos-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -113,7 +113,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (799)</b></summary>
+<summary><b>✅ Synced Repos (801)</b></summary>
 
 - `A-FOT`
 - `A-Ops`
@@ -315,7 +315,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `ci-bot`
 - `cinderx`
 - `clibcni`
-- ... and 599 more
+- ... and 601 more
 
 </details>
 

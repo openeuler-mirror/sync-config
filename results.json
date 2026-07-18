@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-18T04:29:00Z",
-  "total": 839,
-  "success": 799,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-18T05:22:48Z",
+  "total": 841,
+  "success": 801,
   "skipped": 0,
   "failed": 40,
   "success_list": [
@@ -227,6 +227,7 @@
     "cpds-analyzer",
     "cpds-dashboard",
     "cpds-detector",
+    "crius",
     "ct-cockpit",
     "ct-oval",
     "ctdeployer",
@@ -582,6 +583,7 @@
     "pkgs-categorizer",
     "pkgship",
     "plymouth-theme-kiran",
+    "podflow",
     "poissonsearch-oss",
     "poissonsearch-py",
     "polymind",
@@ -906,7 +908,7 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/meson/common/0.63/test_1.tgz is 55.26 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
@@ -914,7 +916,7 @@
     },
     "docs": {
       "category": "large_file",
-      "message": "docs/zh/contribute/public_sys_resources/docmate_rewrite.gif is 80.37 MB, exceeds GitHub 100 MB limit"
+      "message": "docs/zh/contribute/public_sys_resources/docmate_check.gif is 91.37 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler": {
       "category": "clone_failed",
@@ -934,7 +936,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
+      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -942,7 +944,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz is 198.22 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -1026,7 +1028,7 @@
     ],
     "intel-kernel": [
       "Source: accessible",
-      "Destination: Repo is very large (2664MB) — may have timed out",
+      "Destination: Repo is very large (2672MB) — may have timed out",
       "Cached: not found (download may have failed)"
     ],
     "dpu-utilities": [
@@ -1225,9 +1227,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-17T05:43:18Z",
-      "total": 839,
-      "success": 799,
+      "timestamp": "2026-07-18T05:22:48Z",
+      "total": 841,
+      "success": 801,
       "failed": 40,
       "skipped": 0
     },
