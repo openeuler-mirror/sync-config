@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-19T05:04:37Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-19T06:08:06Z",
   "total": 841,
   "success": 801,
   "skipped": 0,
@@ -888,7 +888,7 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -904,15 +904,15 @@
     },
     "presentations": {
       "category": "large_file",
-      "message": "openEuler Summit 2024/openEuler Summit 2024 ppt模板.pptx is 117.59 MB, exceeds GitHub 100 MB limit"
+      "message": "openEuler Summit 2024/poster 模版.pptx is 109.94 MB, exceeds GitHub 100 MB limit"
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/meson/common/0.63/test_1.tgz is 55.26 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/aqute-bnd/common/data.tar.gz is 90.36 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/slam-toolbox/2.1.1-1.tar.gz is 51.22 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -1227,7 +1227,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-18T05:22:48Z",
+      "timestamp": "2026-07-19T06:08:06Z",
       "total": 841,
       "success": 801,
       "failed": 40,
