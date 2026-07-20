@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-20T05:33:49Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-20T06:18:52Z",
   "total": 841,
   "success": 801,
   "skipped": 0,
@@ -888,7 +888,7 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -908,11 +908,11 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/aqute-bnd/common/data.tar.gz is 90.36 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/slam-toolbox/2.1.1-1.tar.gz is 51.22 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -936,7 +936,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
+      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -944,7 +944,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz is 198.22 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -1227,7 +1227,7 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-19T06:08:06Z",
+      "timestamp": "2026-07-20T06:18:52Z",
       "total": 841,
       "success": 801,
       "failed": 40,
