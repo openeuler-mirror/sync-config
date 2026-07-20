@@ -1,8 +1,8 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "repo-mirror",
-  "timestamp": "2026-07-20T06:18:52Z",
+  "workflow": "high",
+  "timestamp": "2026-07-20T07:57:58Z",
   "total": 841,
   "success": 801,
   "skipped": 0,
@@ -1220,7 +1220,7 @@
   },
   "workflows": {
     "high": {
-      "timestamp": "2026-07-20T04:35:51Z",
+      "timestamp": "2026-07-20T07:57:58Z",
       "total": 841,
       "success": 801,
       "failed": 40,
