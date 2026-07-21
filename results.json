@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-21T04:56:15Z",
-  "total": 841,
-  "success": 801,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-21T05:50:03Z",
+  "total": 842,
+  "success": 802,
   "skipped": 0,
   "failed": 40,
   "success_list": [
@@ -515,6 +515,7 @@
     "oec-cloud",
     "oec-hardware",
     "oecp",
+    "oed-cli",
     "oemaker",
     "omnidata-hive-connector",
     "oncn-bwm",
@@ -888,7 +889,7 @@
     },
     "zvm": {
       "category": "large_file",
-      "message": "zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit"
+      "message": "zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit"
     },
     "libarchive-rust": {
       "category": "large_file",
@@ -908,11 +909,11 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/htslib/common/snd.gff is 66.19 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/samtools/common/fstsorted.bam is 91.64 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
+      "message": "hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -936,7 +937,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
+      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -944,7 +945,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz is 198.22 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -972,7 +973,7 @@
     },
     "oee_archive": {
       "category": "large_file",
-      "message": "isula-oe-23.09-image/isula-oe-23.09-image.tar.gz is 70.58 MB, exceeds GitHub 100 MB limit"
+      "message": "rust/rustc-1.76.0-x86_64-unknown-linux-gnu.tar.xz is 62.25 MB, exceeds GitHub 100 MB limit"
     },
     "bigtop-manager": {
       "category": "branch_delete",
@@ -1227,9 +1228,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-20T06:18:52Z",
-      "total": 841,
-      "success": 801,
+      "timestamp": "2026-07-21T05:50:03Z",
+      "total": 842,
+      "success": 802,
       "failed": 40,
       "skipped": 0
     },
