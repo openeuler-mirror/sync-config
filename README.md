@@ -5,7 +5,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-21T05:50:03Z
+**Last updated:** 2026-07-22T06:40:45Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **40 repo(s) failed**
 
@@ -60,11 +60,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`hotpatch_meta`** — Cannot delete 'hotpatch_openEuler-22.03-LTS-SP1_kernel_5.10.0-136.36.0.112_1)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hpc`** — ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hpc`** — BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`hygon-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2606MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
-- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2672MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2671MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
 - **`kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (2585MB) — may have timed out<br>🔍 Cached: bare mirror exists<br>🔍 Cached: valid bare git repo
 
@@ -78,11 +78,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`migration-tools`** — agent-requires/requires/aarch64/migration-tools-agent-1.0.1-1.el7.noarch.rpm is 206.45 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`mugen`** — testcases/cli-test/samtools/common/fstsorted.bam is 91.64 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`mugen`** — testcases/cli-test/meson/common/0.63/test_1.tgz is 55.26 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`nestos-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`oee_archive`** — rust/rustc-1.76.0-x86_64-unknown-linux-gnu.tar.xz is 62.25 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`oee_archive`** — isula-oe-23.09-image/isula-oe-23.09-image.tar.gz is 70.58 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
 
@@ -106,9 +106,9 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`witty-ub`** — Cannot delete 'copy-log)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`yocto-embedded-tools`** — hi-sle/images/handle_debugging.gif is 55.46 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`yocto-embedded-tools`** — hi-sle/images/solder.gif is 69.93 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`zvm`** — zvm_config/qemu_platform/hub/Image_oee is 86.03 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`zvm`** — zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
