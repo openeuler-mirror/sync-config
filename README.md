@@ -5,13 +5,13 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 ## Mirror Sync Status
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-22T06:40:45Z
+**Last updated:** 2026-07-23T06:48:38Z
 **Flow:** `gitcode/openeuler` → `github/openeuler-mirror`
 **Status:** ⚠️ **40 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 842 | 802 | 40 | 0 |
+| 843 | 803 | 40 | 0 |
 
 📊 [查看详细同步状态（含失败原因诊断）](https://huanglei0308.github.io/community-mirror/community.html?org=openEuler)
 
@@ -32,7 +32,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`A-SysArmor`** — Nodlink/test-data/SimulatedWS12.zip is 82.66 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`BiShengCLanguage`** — toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang-cpp.so.12 is 98.37 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`BiShengCLanguage`** — toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang.so.12 is 69.71 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`OSPerformance`** — src/libreoffice.zip is 136.87 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -60,11 +60,11 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`hotpatch_meta`** — Cannot delete 'hotpatch_openEuler-22.03-LTS-SP1_kernel_5.10.0-136.36.0.112_1)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hpc`** — BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hpc`** — src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`hygon-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2606MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
-- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2671MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+- **`intel-kernel`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: Repo is very large (2672MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
 - **`kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (2585MB) — may have timed out<br>🔍 Cached: bare mirror exists<br>🔍 Cached: valid bare git repo
 
@@ -78,7 +78,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`migration-tools`** — agent-requires/requires/aarch64/migration-tools-agent-1.0.1-1.el7.noarch.rpm is 206.45 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`mugen`** — testcases/cli-test/meson/common/0.63/test_1.tgz is 55.26 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`mugen`** — testcases/cli-test/apache-commons-daemon/common/arm/apache-commons-daemon.zip is 70.88 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`nestos-kernel`** — fatal: the remote end hung up unexpectedly<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -106,14 +106,14 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 
 - **`witty-ub`** — Cannot delete 'copy-log)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`yocto-embedded-tools`** — hi-sle/images/solder.gif is 69.93 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`yocto-embedded-tools`** — ros_depends_humble/slam-toolbox/2.6.3-1.tar.gz is 51.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`zvm`** — zvm_config/qemu_platform/hub/Image_withoutFS is 50.98 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/openeuler-mirror/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (802)</b></summary>
+<summary><b>✅ Synced Repos (803)</b></summary>
 
 - `A-FOT`
 - `A-Ops`
@@ -315,7 +315,7 @@ This is a repository for sync configuration — mirroring repos from Gitcode to 
 - `ci-bot`
 - `cinderx`
 - `clibcni`
-- ... and 602 more
+- ... and 603 more
 
 </details>
 

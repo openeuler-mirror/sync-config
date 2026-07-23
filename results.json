@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-23T05:18:01Z",
-  "total": 842,
-  "success": 802,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-23T06:48:38Z",
+  "total": 843,
+  "success": 803,
   "skipped": 0,
   "failed": 40,
   "success_list": [
@@ -327,6 +327,7 @@
     "go-gitee",
     "golang",
     "gostone",
+    "grus",
     "guest-components",
     "ha-api",
     "ha-monitor",
@@ -885,7 +886,7 @@
     },
     "BiShengCLanguage": {
       "category": "large_file",
-      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang-cpp.so.12 is 98.37 MB, exceeds GitHub 100 MB limit"
+      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang.so.12 is 69.71 MB, exceeds GitHub 100 MB limit"
     },
     "zvm": {
       "category": "large_file",
@@ -909,11 +910,11 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/meson/common/0.63/test_1.tgz is 55.26 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/apache-commons-daemon/common/arm/apache-commons-daemon.zip is 70.88 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "hi-sle/images/solder.gif is 69.93 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends_humble/slam-toolbox/2.6.3-1.tar.gz is 51.23 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -937,7 +938,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
+      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -1029,7 +1030,7 @@
     ],
     "intel-kernel": [
       "Source: accessible",
-      "Destination: Repo is very large (2671MB) — may have timed out",
+      "Destination: Repo is very large (2672MB) — may have timed out",
       "Cached: not found (download may have failed)"
     ],
     "dpu-utilities": [
@@ -1228,9 +1229,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-22T06:40:45Z",
-      "total": 842,
-      "success": 802,
+      "timestamp": "2026-07-23T06:48:38Z",
+      "total": 843,
+      "success": 803,
       "failed": 40,
       "skipped": 0
     },
