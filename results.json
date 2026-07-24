@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-24T05:02:34Z",
-  "total": 843,
-  "success": 803,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-24T06:09:55Z",
+  "total": 845,
+  "success": 805,
   "skipped": 0,
   "failed": 40,
   "success_list": [
@@ -336,6 +336,7 @@
     "hands-on",
     "hb_build",
     "hbm-predictor",
+    "heap-analyser",
     "heolleo",
     "heterogeneous_systems_programming",
     "hey",
@@ -666,6 +667,7 @@
     "spdk",
     "splitter",
     "spring-adapter",
+    "sprinkler",
     "sra_benchmark",
     "sra_onnxruntime_adapter",
     "sra_scann_adapter",
@@ -886,7 +888,7 @@
     },
     "BiShengCLanguage": {
       "category": "large_file",
-      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang.so.12 is 69.71 MB, exceeds GitHub 100 MB limit"
+      "message": "toolchain/bsc_host_linux_x86_64_target_aarch64/thirdparty/clang+llvm-12.0.0-x86_64-linux-gnu-ubuntu-18.04/lib/libclang-cpp.so.12 is 98.37 MB, exceeds GitHub 100 MB limit"
     },
     "zvm": {
       "category": "large_file",
@@ -910,7 +912,7 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/apache-commons-daemon/common/arm/apache-commons-daemon.zip is 70.88 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/aqute-bnd/common/data.tar.gz is 90.36 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
@@ -918,7 +920,7 @@
     },
     "docs": {
       "category": "large_file",
-      "message": "docs/zh/contribute/public_sys_resources/docmate_check.gif is 91.37 MB, exceeds GitHub 100 MB limit"
+      "message": "docs/zh/contribute/public_sys_resources/docmate_rewrite.gif is 80.37 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler": {
       "category": "clone_failed",
@@ -938,7 +940,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
+      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -1030,7 +1032,7 @@
     ],
     "intel-kernel": [
       "Source: accessible",
-      "Destination: Repo is very large (2672MB) — may have timed out",
+      "Destination: Repo is very large (2673MB) — may have timed out",
       "Cached: not found (download may have failed)"
     ],
     "dpu-utilities": [
@@ -1229,9 +1231,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-23T06:48:38Z",
-      "total": 843,
-      "success": 803,
+      "timestamp": "2026-07-24T06:09:55Z",
+      "total": 845,
+      "success": 805,
       "failed": 40,
       "skipped": 0
     },
