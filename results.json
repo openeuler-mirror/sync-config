@@ -1,10 +1,10 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-28T04:47:36Z",
-  "total": 845,
-  "success": 805,
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-28T05:54:48Z",
+  "total": 846,
+  "success": 806,
   "skipped": 0,
   "failed": 40,
   "success_list": [
@@ -300,6 +300,7 @@
     "extfuse",
     "extuner",
     "fastblock",
+    "fgds",
     "ft_engine",
     "ft_flutter",
     "ft_mmi",
@@ -912,15 +913,15 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/samtools/common/fst.bam is 91.64 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/aqute-bnd/common/data.tar.gz is 90.36 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/pcl/pcl-1.10.1.tar.gz is 63.98 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/suitesparse/SuiteSparse-5.4.0.tar.gz is 50.16 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
-      "message": "docs/zh/contribute/public_sys_resources/docmate_rewrite.gif is 80.37 MB, exceeds GitHub 100 MB limit"
+      "message": "docs/zh/contribute/public_sys_resources/docmate_improve.gif is 82.91 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler": {
       "category": "clone_failed",
@@ -940,7 +941,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "BasicScientficResearch/cp2k-7.1.0/dependency/src/libint-v2.6.0-cp2k-lmax-6.tgz is 84.51 MB, exceeds GitHub 100 MB limit"
+      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -992,7 +993,7 @@
     },
     "sra_test": {
       "category": "large_file",
-      "message": "indexes/hnsw/sift.faiss.xz is 156.96 MB, exceeds GitHub 100 MB limit"
+      "message": "indexes/kbest/sift.kbest.xz is 159.86 MB, exceeds GitHub 100 MB limit"
     },
     "A-SysArmor": {
       "category": "large_file",
@@ -1231,9 +1232,9 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-27T06:29:47Z",
-      "total": 845,
-      "success": 805,
+      "timestamp": "2026-07-28T05:54:48Z",
+      "total": 846,
+      "success": 806,
       "failed": 40,
       "skipped": 0
     },
