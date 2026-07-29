@@ -1,12 +1,12 @@
 {
   "src": "gitcode/openeuler",
   "dst": "github/openeuler-mirror",
-  "workflow": "large-repo-mirror",
-  "timestamp": "2026-07-29T04:43:25Z",
+  "workflow": "repo-mirror",
+  "timestamp": "2026-07-29T05:56:20Z",
   "total": 846,
-  "success": 806,
+  "success": 805,
   "skipped": 0,
-  "failed": 40,
+  "failed": 41,
   "success_list": [
     "A-FOT",
     "A-Ops",
@@ -738,7 +738,6 @@
     "uos-mgmt-exporter",
     "uos-network-exporter",
     "uos-openldap-exporter",
-    "uos-squid-exporter",
     "uos-syslog-ng-exporter",
     "uos-tc-exporter",
     "uos-time-exporter",
@@ -852,6 +851,7 @@
     "sra_test",
     "sysmaster",
     "trivy",
+    "uos-squid-exporter",
     "virtCCA_sdk",
     "witty-ub",
     "yocto-embedded-tools",
@@ -913,11 +913,11 @@
     },
     "mugen": {
       "category": "large_file",
-      "message": "testcases/cli-test/aqute-bnd/common/data.tar.gz is 90.36 MB, exceeds GitHub 100 MB limit"
+      "message": "testcases/cli-test/samtools/common/fstnamesort.bam is 98.38 MB, exceeds GitHub 100 MB limit"
     },
     "yocto-embedded-tools": {
       "category": "large_file",
-      "message": "ros_depends/suitesparse/SuiteSparse-5.4.0.tar.gz is 50.16 MB, exceeds GitHub 100 MB limit"
+      "message": "ros_depends/slam-toolbox/2.1.1-1.tar.gz is 51.22 MB, exceeds GitHub 100 MB limit"
     },
     "docs": {
       "category": "large_file",
@@ -941,7 +941,7 @@
     },
     "hpc": {
       "category": "large_file",
-      "message": "ManufacturingSimulation/BerkeleyGW-3.0.1/src/BerkeleyGW-3.0.1.tar.gz is 60.43 MB, exceeds GitHub 100 MB limit"
+      "message": "src/WRF/wrf-10oct2021/main/stckDuul is 63.11 MB, exceeds GitHub 100 MB limit"
     },
     "opensource-intern": {
       "category": "large_file",
@@ -949,7 +949,7 @@
     },
     "bishengjdk-build": {
       "category": "large_file",
-      "message": "bootjdk/jdk21/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.1_12.tar.gz is 196.43 MB, exceeds GitHub 100 MB limit"
+      "message": "bootjdk/jdk21/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz is 198.22 MB, exceeds GitHub 100 MB limit"
     },
     "opendesign-internship": {
       "category": "large_file",
@@ -961,7 +961,7 @@
     },
     "gala-docs": {
       "category": "large_file",
-      "message": "deploy/middleware_archive/kafka_2.13-2.8.2.tgz is 68.29 MB, exceeds GitHub 100 MB limit"
+      "message": "theme/public/videos/5.A-Ops_deploy_tools.webm is 51.12 MB, exceeds GitHub 100 MB limit"
     },
     "lzu-icc-nsg": {
       "category": "large_file",
@@ -977,7 +977,7 @@
     },
     "oee_archive": {
       "category": "large_file",
-      "message": "isula-oe-23.09-image/isula-oe-23.09-image.tar.gz is 70.58 MB, exceeds GitHub 100 MB limit"
+      "message": "rust/rustc-1.76.0-x86_64-unknown-linux-gnu.tar.xz is 62.25 MB, exceeds GitHub 100 MB limit"
     },
     "bigtop-manager": {
       "category": "branch_delete",
@@ -993,7 +993,7 @@
     },
     "sra_test": {
       "category": "large_file",
-      "message": "indexes/kbest/sift.kbest.xz is 159.86 MB, exceeds GitHub 100 MB limit"
+      "message": "indexes/hnsw/sift.faiss.xz is 156.96 MB, exceeds GitHub 100 MB limit"
     },
     "A-SysArmor": {
       "category": "large_file",
@@ -1018,6 +1018,10 @@
     "kernel": {
       "category": "push_failed",
       "message": "fatal: the remote end hung up unexpectedly"
+    },
+    "uos-squid-exporter": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     }
   },
   "diagnoses": {
@@ -1221,6 +1225,11 @@
       "Destination: Repo is very large (2585MB) — may have timed out",
       "Cached: bare mirror exists",
       "Cached: valid bare git repo"
+    ],
+    "uos-squid-exporter": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
     ]
   },
   "workflows": {
@@ -1232,10 +1241,10 @@
       "skipped": 0
     },
     "repo-mirror": {
-      "timestamp": "2026-07-28T05:54:48Z",
+      "timestamp": "2026-07-29T05:56:20Z",
       "total": 846,
-      "success": 806,
-      "failed": 40,
+      "success": 805,
+      "failed": 41,
       "skipped": 0
     },
     "large-repo-mirror": {
